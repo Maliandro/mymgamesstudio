@@ -75,7 +75,7 @@ GAMES = [
                 ("Support", "https://maliandro.github.io/tomb-maze-site/support.html")]),
     dict(name="Prof. Nano", icon="img/prof-nano.jpg", keys=["prof-nano", "nano"],
          alt="Prof. Nano science game for kids icon",
-         text="Science adventures for kids.", note="Turkish only for now · Türkiye",
+         text="A game that sparks kids' curiosity about science.", note="Turkish first · more languages later",
          store=None, site="https://maliandro.github.io/profnano-site/", lang="tr",
          legal=[("Website", "https://maliandro.github.io/profnano-site/"),
                 ("Privacy", "https://maliandro.github.io/profnano-site/gizlilik.html"),

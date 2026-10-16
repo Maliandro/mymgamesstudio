@@ -1,12 +1,12 @@
 ---
-title: "Prof. Nano: A Science Game for Turkish Kids"
-seo_title: "Science Game for Kids, Made in Turkish: Prof. Nano"
+title: "Prof. Nano: A Game That Sparks Kids' Curiosity About Science"
+seo_title: "Science Game for Kids That Sparks Curiosity: Prof. Nano"
 slug: prof-nano
 description: "Prof. Nano is a science game for kids, made first in Turkish and now in App Store review. Why I built it as a father, and what's planned for parents."
 date: 2026-10-16
 order: 8
 cover: img/prof-nano.jpg
-keywords: science game for kids, educational game for children, kids science games app, STEM game for kids, Turkish kids learning game, parent friendly game
+keywords: science game for kids, educational game for children, kids science games app, STEM game for kids, science curiosity for kids, parent friendly game
 cta_label: Prof. Nano — coming soon
 cta_url: https://maliandro.github.io/profnano-site/
 ---
@@ -21,7 +21,7 @@ I wanted play first. If a child feels they're doing homework, I've lost. The lea
 
 ## Why Turkish first
 
-For now, Prof. Nano is prepared only for Turkish children: Turkish language, made for Türkiye. That's a deliberate limit, not a lack of ambition.
+For now, Prof. Nano is available in Turkish only, starting in Türkiye. That's a deliberate first step, not a lack of ambition: I want to get one language right before translating it into others.
 
 Making something for children in a language I speak natively means I can hear when a sentence is too hard, when a word is wrong for a six-year-old, when a joke doesn't land. I can test it on the child in front of me. I didn't want to launch in six languages and be guessing in five of them.
 
@@ -45,4 +45,4 @@ After the Turkish version has settled and I've learned from real families, I wan
 
 ## Where it is now
 
-Prof. Nano is currently in App Store review. When it's approved, it will appear on the App Store for Turkish-speaking families, and I'll post the link here and on the small site below. If you're a parent and you try it, tell me what your child did and didn't understand. That's the feedback that will shape what comes next.
+Prof. Nano is currently in App Store review. When it's approved, it will appear on the App Store in Türkiye first, and I'll post the link here and on the small site below. If you're a parent and you try it, tell me what your child did and didn't understand. That's the feedback that will shape what comes next.
