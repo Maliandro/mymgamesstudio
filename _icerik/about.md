@@ -1,16 +1,17 @@
 ---
 title: "About Me and MEYADE GAMES STUDIO"
+seo_title: "About Me: Solo Indie Game Developer in Turkey"
 slug: about
-description: "I'm Mehmet Ali, a solo maker from Turkey building apps and games in my free time. Who I am, what I've made so far, and where to follow along."
+description: "I'm Mehmet Ali, a solo indie game developer in Turkey building apps and games in my free time. Who I am, what I've made, and where to follow along."
 date: 2026-10-16
 order: 1
 cover: img/logo-256.jpg
-keywords: indie game developer, solo developer, MEYADE GAMES STUDIO, indie games Turkey, hobby game development, one-person studio, indie apps
+keywords: solo indie game developer, indie game dev journey, one-person game studio, indie games Turkey, MEYADE GAMES STUDIO, hobby game development
 cta_label: See all projects
 cta_url: https://meyadegamesstudio.vercel.app
 ---
 
-Hi, I'm Mehmet Ali. I live in Turkey, I work a full-time job, I'm married, and I'm the father of one. MEYADE GAMES STUDIO is the name I put on everything I build in the hours left over after all of that.
+Hi, I'm Mehmet Ali, a solo indie game developer. I live in Turkey, I work a full-time job, I'm married, and I'm the father of one. MEYADE GAMES STUDIO is the name I put on everything I build in the hours left over after all of that.
 
 ## How this started
 

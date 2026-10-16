@@ -1,16 +1,17 @@
 ---
 title: "Protokol-Ø: What I Learned Making My First Game"
+seo_title: "AI Thriller Story Game: What Protokol-Ø Taught Me"
 slug: protokol-zero
-description: "Protokol-Ø is an AI thriller told through cases: approve, reject or escalate, and your decisions matter. What my first game taught me about making games."
+description: "Protokol-Ø is an AI thriller story game told through cases: approve, reject or escalate. What my first game taught me about making games. Read the story."
 date: 2026-10-16
 order: 3
 cover: img/protokol-0.jpg
-keywords: AI thriller game, interactive story game, decision based game, narrative game, text based thriller, free story game, indie story game
+keywords: AI thriller story game, decision making story game, story choice game, moral choice game, text based thriller, story game ios, indie story game
 cta_label: Play Protokol-Ø on the App Store
 cta_url: https://apps.apple.com/app/id6761679315
 ---
 
-After Unutma, I wanted to try something I had never done: make a game. Not a big one. Something I could actually finish, with a story I cared about. That became PROTOKOL-Ø, my first game experiment.
+After Unutma, I wanted to try something I had never done: make a game. Not a big one. Something I could actually finish, with a story I cared about. That became PROTOKOL-Ø, my first game experiment: an AI thriller story game.
 
 ## The idea
 
@@ -20,13 +21,13 @@ So Protokol-Ø is an AI thriller told through cases. A case lands in front of yo
 
 I won't say more about the plot. It's a thriller; the less you know going in, the better.
 
-## Why cases
+## Why a decision-making game told through cases
 
 I chose the case format partly because I love it and partly because I was honest with myself about my limits. I didn't know how to build 3D worlds yet. I didn't know how to animate characters. What I did know, from building Unutma, was how to make clean screens, store state and move data around.
 
 A case-based story plays to those strengths. Each case is a screen. Each decision is state. The hard part becomes writing, pacing and consequence — things I could work on in the evenings without fighting an engine.
 
-## What I learned
+## What my first game taught me
 
 **A game is not an app with a story attached.** In an app, friction is the enemy; you remove every step you can. In a game, the right kind of friction *is* the game. Making the player hesitate before pressing "approve" was the whole point. I had to unlearn a lot of app instincts.
 
@@ -38,7 +39,7 @@ A case-based story plays to those strengths. Each case is a screen. Each decisio
 
 ## How it's offered
 
-Protokol-Ø is free to play, with optional in-app purchases. There are no ads. That was a deliberate choice: a thriller falls apart when a video interrupts the moment you're deciding someone's fate. I'd rather the game stay quiet and let people support it if they want to.
+Protokol-Ø is free to download and the first two modules are free. If you want to keep going, a single one-time purchase unlocks the rest of the story. There are no ads. That was a deliberate choice: a thriller falls apart when a video interrupts the moment you're deciding someone's fate. I'd rather the game stay quiet and let people support it if they want to.
 
 ## Where it is now
 

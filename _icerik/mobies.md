@@ -1,16 +1,17 @@
 ---
 title: "Mobies: A Customer Book for Small Businesses"
+seo_title: "Customer Book App for Small Businesses: Mobies"
 slug: mobies
-description: "Mobies grew out of Unutma into an app for barbers, salons, tailors and repair shops: who came, who's late, who's due, plus quotes, invoices and reminders."
+description: "Mobies is a customer book app for barbers, salons, tailors and repair shops: who came, who's late, who's due. No account, data on your phone. See how."
 date: 2026-10-16
 order: 5
 cover: img/mobies.jpg
-keywords: customer book app, small business app, client management for barbers, salon customer records, invoice and quote app, WhatsApp reminders, no account business app, offline CRM
+keywords: customer book app, client record book app, client book app for barbers, salon client records, customer visit reminders, invoice and quote app, offline CRM for small business
 cta_label: Learn more about Mobies
 cta_url: https://mobies.vercel.app
 ---
 
-Mobies wasn't planned. It grew out of Unutma, almost by accident, and then it insisted on becoming its own thing.
+Mobies, my customer book app for small businesses, wasn't planned. It grew out of Unutma, almost by accident, and then it insisted on becoming its own thing.
 
 ## "Can I use this for my shop?"
 
@@ -20,7 +21,7 @@ So the first version really was "Unutma for small businesses." Same bones, with 
 
 That became Mobies.
 
-## Who it's for
+## Who it's for: barbers, salons, tailors and repair shops
 
 Mobies is for the small places: barbers, hair and beauty salons, tailors, repair shops, pet groomers, cafés, freelancers, and the kind of shop that doesn't fit any category. The ones where the owner knows most customers by face, and where "the system" has traditionally been a notebook by the register.
 
@@ -39,13 +40,11 @@ Around that core:
 - **Visit history and notes** per customer, with fields that change depending on the kind of business.
 - **A monthly view** and simple order or preparation lists.
 
-## The same promise as Unutma
+## No account, data on your phone: the same promise as Unutma
 
 Mobies works without an account. There is no server behind it; your customer data lives on your phone, encrypted. It works without internet, which matters more than people expect in a basement barbershop or a workshop with bad reception.
 
 I'm careful how I say this: your data is on your phone, and you decide where any backup goes. There's no Mobies cloud quietly holding your customer list. And if you ever stop subscribing, your records stay readable, searchable and exportable. Your customers are yours.
-
-## What went wrong
 
 ## Where it is now
 

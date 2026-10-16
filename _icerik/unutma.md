@@ -1,16 +1,17 @@
 ---
 title: "Unutma: My First Experiment, an Offline Personal Assistant"
+seo_title: "Offline Personal Assistant App: The Unutma Story"
 slug: unutma
-description: "How a daily worry ('did I lock the door?') became Unutma: a private notes app, password vault and offline personal assistant that lives on your phone."
+description: "How a daily worry (did I lock the door?) became Unutma: an offline personal assistant app with notes and a private vault on your phone. Read the story."
 date: 2026-10-16
 order: 2
 cover: img/unutma.jpg
-keywords: offline personal assistant, private notes app, password vault, to-do and reminders, second brain, journal app, no account app, on-device AI
+keywords: offline personal assistant app, private notes app, password vault app, no account app, on-device assistant, offline notes app iphone, reminders and to-do app
 cta_label: Read more about Unutma
 cta_url: https://unutma-blog.vercel.app
 ---
 
-Unutma is the first thing I ever shipped. The name is Turkish for "don't forget," and that is exactly where it came from.
+Unutma, my offline personal assistant app, is the first thing I ever shipped. The name is Turkish for "don't forget," and that is exactly where it came from.
 
 ## A small daily anxiety
 
@@ -18,7 +19,7 @@ I'd leave the house and, ten minutes later, the question would arrive: did I loc
 
 So the first version of Unutma was almost embarrassingly simple. A place to tap "locked the door" as I walked out, so that later I could check and stop wondering. Quick actions, a timestamp, nothing else. I built it for myself, in the evenings, as a way to learn how apps are made.
 
-## Then my family needed a vault
+## Then my family needed a password vault
 
 The next piece came from the older people in my family. They kept forgetting their passwords. They'd write them on paper, lose the paper, reset the password, write it down again. I didn't want to hand them yet another account to forget.
 
@@ -30,7 +31,7 @@ Once the vault was there, the rest followed the same logic: if I'm already openi
 
 I know that sounds like feature creep, and some of it was. But the common thread was always the same: these were the things I kept forgetting, and I wanted them in one quiet place that belonged to me.
 
-## Unutma Brain
+## Unutma Brain, an on-device assistant
 
 The part I'm proudest of came later. After a while the app had a lot of places to put things, and choosing the right one became its own small chore. Is this a note or a to-do? A reminder or a journal entry?
 
@@ -57,3 +58,4 @@ Unutma has been on the App Store since February 2026 and I'm still developing it
 
 Read more: https://unutma-blog.vercel.app
 App Store: https://apps.apple.com/app/id6758889495
+Android: Google Play https://play.google.com/store/apps/details?id=com.mehmet.unutma

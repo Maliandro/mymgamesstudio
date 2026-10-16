@@ -1,18 +1,19 @@
 ---
 title: "NEO: An Interactive Horror Story With 20 Endings"
+seo_title: "Interactive Horror Story Game With 20 Endings: NEO"
 slug: neo
-description: "NEO started as a small interactive story experiment and grew to 285 scenes, 675 branches and 20 endings, all free. The clock stopped at 17:34."
+description: "NEO is a free interactive horror story game: 285 scenes, 675 branches, 20 endings. Your friend is missing and the clock stopped at 17:34. Start reading."
 date: 2026-10-16
 order: 4
 cover: img/neo.jpg
-keywords: interactive horror story, choose your own adventure game, branching narrative game, text horror game, multiple endings game, mystery story game, free horror game
+keywords: interactive horror story game, choose your own adventure horror game, horror game with multiple endings, text based horror game, time loop horror game, free horror game ios
 cta_label: Play NEO on the App Store
 cta_url: https://apps.apple.com/app/id6790913836
 ---
 
-NEO didn't start as a big project. After Protokol-Ø, I wanted to try one specific thing: a story where the branches really branch, where two players could finish and have genuinely different experiences. A small experiment. It didn't stay small.
+NEO, my interactive horror story game, didn't start as a big project. After Protokol-Ø, I wanted to try one specific thing: a story where the branches really branch, where two players could finish and have genuinely different experiences. A small experiment. It didn't stay small.
 
-## The hook
+## The hook: a choose-your-own-adventure horror story
 
 Your friend is missing. The clock has stopped at 17:34. The same day keeps repeating. And the wrong door kills you.
 
@@ -32,7 +33,7 @@ The real work wasn't writing scenes; it was keeping them consistent. When the sa
 
 A lot of evenings went into tracking what the player has seen and done, and chasing contradictions, rather than writing anything new. It's unglamorous work, but a horror story that doesn't hold together isn't scary, it's just confusing.
 
-## Writing endings
+## Writing a horror game with multiple endings
 
 Twenty endings sounds like a lot, and it is. The trap is making most of them feel like failure states. I tried hard to make each one a real end, with its own tone, so that players who reach a "bad" one still feel they finished a story rather than hit a wall.
 

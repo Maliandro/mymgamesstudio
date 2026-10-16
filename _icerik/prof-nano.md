@@ -1,11 +1,12 @@
 ---
 title: "Prof. Nano: A Science Game for Turkish Kids"
+seo_title: "Science Game for Kids, Made in Turkish: Prof. Nano"
 slug: prof-nano
-description: "Prof. Nano is a science game for children, built first in Turkish and now in App Store review. Why I made it, and what I plan to add for parents and kids."
+description: "Prof. Nano is a science game for kids, made first in Turkish and now in App Store review. Why I built it as a father, and what's planned for parents."
 date: 2026-10-16
 order: 8
 cover: img/prof-nano.jpg
-keywords: science game for kids, educational game for children, Turkish kids app, learning game, STEM game for children, kids science app, parent friendly game
+keywords: science game for kids, educational game for children, kids science games app, STEM game for kids, Turkish kids learning game, parent friendly game
 cta_label: Prof. Nano — coming soon
 cta_url: https://maliandro.github.io/profnano-site/
 ---
@@ -36,7 +37,7 @@ I'm a one-person studio, so I can't claim a team of educators reviewed every scr
 
 Like everything else here, Prof. Nano was built in the hours after work and on weekends. That has one advantage I didn't expect: I was building it in the same hours a child is awake and asking questions. More than one activity in the game started from something I was asked at the dinner table and couldn't explain well on the spot.
 
-## The plan
+## The plan: more educational mini-games
 
 Prof. Nano as it stands is a start, not the whole idea. The plan is to gradually add more informative, educational mini-games, each around a different topic, so that over time it grows into a small library rather than a single game.
 

@@ -1,18 +1,19 @@
 ---
 title: "Foot Tennis Stars: From Stick Figures to Online Matches"
+seo_title: "Foot Tennis Game: From Stick Figures to Online Matches"
 slug: foot-tennis-stars
-description: "Foot Tennis Stars started as a 2D offline game. Then came a league, a cup, 3D characters and, hardest of all, online matches. Here's how it grew."
+description: "Foot Tennis Stars began as a 2D offline foot tennis game. Then came a league, a cup, 3D players and online matches. Here's how it grew, and what's next."
 date: 2026-10-16
 order: 7
 cover: img/foot-tennis-stars.jpg
-keywords: foot tennis game, football volleyball game, footvolley mobile game, online sports game, offline sports game, league and cup mode, indie sports game
+keywords: foot tennis game, football tennis game, football volleyball game, footvolley game, online sports game, offline sports game, indie sports game
 cta_label: Play Foot Tennis Stars on the App Store
 cta_url: https://apps.apple.com/app/id6804052429
 ---
 
-Foot tennis is a sport I've loved for a long time: a net, a ball, and the rule that you can't use your hands. Football meets volleyball. It's played seriously and competitively in many countries, under many different names, and I'd never seen a mobile game that treated it with much care. So I made one.
+Foot tennis is a sport I've loved for a long time: a net, a ball, and the rule that you can't use your hands. Football meets volleyball. It's played seriously and competitively in many countries, under many different names, and I'd never seen a mobile game that treated it with much care. So I made one: a foot tennis game called Foot Tennis Stars.
 
-## It started flat
+## It started flat: a 2D offline game
 
 The first Foot Tennis Stars was 2D. Side view, two players, a net in the middle, and that was it. It was fully offline, no account, nothing to connect to. You opened it and played.
 
@@ -30,7 +31,7 @@ For a long time the players were, honestly, stick figures. Functional, readable,
 
 That was a bigger jump than I expected. 3D meant new animation, a camera that had to follow the ball without making people dizzy, and physics that looked right from an angle rather than from the side. The ball's arc, the timing of a bicycle kick, the way a player plants a foot: all of it had to be rebuilt. The game you see now looks nothing like the one I started with, and most of that is this step.
 
-## The hardest step: online
+## The hardest step: online matches
 
 The latest and hardest thing I've added is online matches. Everything before this ran on one phone. Online means two phones, two people, and the internet between them, and the internet does not care about your game feeling fair.
 
@@ -48,7 +49,7 @@ One thing that genuinely surprised me: a Turkish foot-tennis community found the
 
 ## Where it is now
 
-Foot Tennis Stars has been on the App Store since September 2026, in several languages. The newest version I've been working on adds online matches and a World Cup mode. Online is where my attention is right now: smoother matches, fairer outcomes, faster matchmaking.
+Foot Tennis Stars has been on the App Store since September 2026, in several languages. The newest version I've been working on adds online matches and a World Cup mode. Online is where my attention is right now: smoother matches, fairer outcomes, faster matchmaking. An Android version is coming soon, too.
 
 If you play, I'd love to know how a match felt, especially an online one.
 

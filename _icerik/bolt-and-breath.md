@@ -1,20 +1,21 @@
 ---
 title: "Bolt & Breath: Why I Wanted to Ride a Dragon"
+seo_title: "Dragon Flying Game for iPhone: Why I Built Bolt & Breath"
 slug: bolt-and-breath
-description: "I wanted to ride a dragon, so I built one in Unity. The story of Bolt & Breath: Last Dragon, the sea that fought back, and the updates still coming."
+description: "I wanted to ride a dragon, so I built a dragon flying game in Unity. The story of Bolt & Breath: Last Dragon, the sea that fought back, and what's next."
 date: 2026-10-16
 order: 6
 cover: img/bolt-and-breath.jpg
-keywords: dragon flight game, dragon simulator, burn the fleet game, Unity indie game, ballista shooter, medieval fantasy mobile game, solo game development
+keywords: dragon flying game, dragon game iphone, dragon simulator ios, burn the fleet dragon game, ballista shooter, Unity indie game, solo game development
 cta_label: Get Bolt & Breath on the App Store
 cta_url: https://apps.apple.com/app/id6804506347
 ---
 
 I'll admit the origin plainly: I'm a Game of Thrones fan, and a Khaleesi fan in particular. Every time she climbed onto a dragon I thought the same thing: I want to do that. Not watch it. Do it.
 
-Bolt & Breath: Last Dragon is me, years later, finally building that feeling for myself. Nothing in it comes from the show; it's my own world and my own story. But that wish is where it started.
+Bolt & Breath: Last Dragon, my dragon flying game for iPhone, is me, years later, finally building that feeling for myself. Nothing in it comes from the show; it's my own world and my own story. But that wish is where it started.
 
-## What the game is
+## What the game is: fly, burn the fleet, man the ballista
 
 You are the last dragon. A royal fleet and its castles stand between you and whatever comes next, and your job is to burn them. You fly low over the water, line up a ship, breathe fire and watch the sails catch. Then you bank and come around for the next one.
 
@@ -36,7 +37,7 @@ At one point the water in the hub had a strange checkerboard pattern that I was 
 
 Then the night sea, foam that wouldn't stop, brightness that looked different on every phone. Each update has touched the water, and the next one probably will too.
 
-## The dragon
+## The dragon: flight feel, fire and look
 
 The second hardest thing was the dragon itself, in three ways.
 

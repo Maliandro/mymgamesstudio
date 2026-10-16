@@ -39,36 +39,42 @@ DEV_STORE = "https://apps.apple.com/us/developer/mehmet-ali-dengis/id1875549780"
 # keys: words that, found in a post slug, link that post to the game card.
 GAMES = [
     dict(name="Foot Tennis Stars", icon="img/foot-tennis-stars.jpg", keys=["foot-tennis"],
+         alt="Foot Tennis Stars foot tennis game icon", badge="Android coming soon",
          text="Football meets volleyball: real foot tennis rules, smash shots over the net and online matches.",
          store="https://apps.apple.com/app/id6804052429",
          legal=[("Privacy", "https://maliandro.github.io/futnet-stars/privacy.html"),
                 ("Terms", "https://maliandro.github.io/futnet-stars/terms.html"),
                 ("Support", "https://maliandro.github.io/futnet-stars/support.html")]),
     dict(name="Bolt & Breath: Last Dragon", icon="img/bolt-and-breath.jpg", keys=["bolt", "last-dragon"],
+         alt="Bolt & Breath: Last Dragon dragon flying game icon",
          text="You are the last dragon. Glide over a windswept coast and burn the royal fleet that came to hunt you.",
          store="https://apps.apple.com/app/id6804506347",
          legal=[("Privacy", "https://maliandro.github.io/boltandbreath/privacy.html"),
                 ("Terms", "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"),
                 ("Support", "https://maliandro.github.io/boltandbreath/support.html")]),
     dict(name="NEO: Interactive Horror Story", icon="img/neo.jpg", keys=["neo"],
+         alt="NEO interactive horror story game icon",
          text="Your friend has been missing for three days, and the campus clock stopped at 17:34. Every choice leaves a trace.",
          store="https://apps.apple.com/app/id6790913836",
          legal=[("Privacy", "https://maliandro.github.io/neo/en/privacy.html"),
                 ("Terms", "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"),
                 ("Support", "https://maliandro.github.io/neo/en/support.html")]),
     dict(name="Protokol-Ø: AI Thriller Story", icon="img/protokol-0.jpg", keys=["protokol", "protocol"],
+         alt="Protokol-Ø AI thriller story game icon",
          text="An AI thriller told through cases: approve, reject, escalate, and find out who your decisions reach.",
          store="https://apps.apple.com/app/id6761679315",
          legal=[("Privacy", "https://sites.google.com/view/protokolzero/privacy-policy"),
                 ("Terms", "https://sites.google.com/view/protokolzero/terms-of-service"),
                 ("Support", "https://sites.google.com/view/protokolzero")]),
     dict(name="Tomb Maze: Horror Escape", icon="img/tomb-maze.jpg", keys=["tomb-maze", "tomb"],
+         alt="Tomb Maze: Horror Escape horror maze game icon",
          text="Escape the mazes beneath a collapsing pyramid, with Guardians that see and hear you.",
          store=None, site="https://maliandro.github.io/tomb-maze-site/",
          legal=[("Privacy", "https://maliandro.github.io/tomb-maze-site/privacy.html"),
                 ("Terms", "https://maliandro.github.io/tomb-maze-site/terms.html"),
                 ("Support", "https://maliandro.github.io/tomb-maze-site/support.html")]),
     dict(name="Prof. Nano", icon="img/prof-nano.jpg", keys=["prof-nano", "nano"],
+         alt="Prof. Nano science game for kids icon",
          text="Science adventures for kids.", note="Turkish only for now · Türkiye",
          store=None, site="https://maliandro.github.io/profnano-site/", lang="tr",
          legal=[("Website", "https://maliandro.github.io/profnano-site/"),
@@ -78,11 +84,14 @@ GAMES = [
 ]
 APPS = [
     dict(name="Unutma", icon="img/unutma.jpg", keys=["unutma"],
+         alt="Unutma offline personal assistant app icon", platforms="iOS, Android",
+         play="https://play.google.com/store/apps/details?id=com.mehmet.unutma",
          text="A private personal assistant that works offline: say it, and it keeps your reminders, notes and expenses.",
          store="https://apps.apple.com/app/id6758889495",
          legal=[("Website", "https://unutma-blog.vercel.app/"), ("Privacy", "https://unutma-blog.vercel.app/privacy"),
                 ("Terms", "https://unutma-blog.vercel.app/terms"), ("Support", "https://unutma-blog.vercel.app/")]),
     dict(name="Mobies", icon="img/mobies.jpg", keys=["mobies"],
+         alt="Mobies customer book app icon",
          text="A customer book for small businesses: know your regulars, with no account and your data on your phone.",
          store="https://apps.apple.com/app/id6766030370",
          legal=[("Website", "https://mobies.vercel.app/"), ("Privacy", "https://mobies.vercel.app/privacy.html"),
@@ -90,6 +99,29 @@ APPS = [
 ]
 
 e = lambda s: html.escape(str(s), quote=True)
+
+# Each post links to 1-2 related posts ("Related" line under the article).
+RELATED = {
+    "neo": ["protokol-zero", "tomb-maze"],
+    "protokol-zero": ["neo", "tomb-maze"],
+    "tomb-maze": ["neo", "protokol-zero"],
+    "unutma": ["mobies"],
+    "mobies": ["unutma"],
+    "bolt-and-breath": ["foot-tennis-stars", "prof-nano"],
+    "foot-tennis-stars": ["bolt-and-breath", "prof-nano"],
+    "prof-nano": ["bolt-and-breath", "foot-tennis-stars"],
+}
+
+
+def alt_for(src, fallback=""):
+    """Descriptive alt text for a site image (game/app icons, logo)."""
+    s = (src or "").lstrip("/")
+    for it in GAMES + APPS:
+        if it["icon"] == s:
+            return it.get("alt") or f"{it['name']} icon"
+    if "logo" in s:
+        return f"{BRAND} logo"
+    return fallback
 
 
 # ---------------------------------------------------------------- content
@@ -196,7 +228,7 @@ def load_posts():
         except (TypeError, ValueError):
             order = None
         p = dict(
-            file=f.name, title=title, slug=slugify(meta.get("slug") or f.stem),
+            file=f.name, title=title, seo_title=meta.get("seo_title") if isinstance(meta.get("seo_title"), str) else "", slug=slugify(meta.get("slug") or f.stem),
             description=meta.get("description") or "", keywords=kw,
             date=parse_date(meta.get("date", ""), mtime), order=order,
             updated=parse_date(meta.get("updated", ""), None) if meta.get("updated") else None,
@@ -285,7 +317,8 @@ SCRIPT = """<script>
 </script>"""
 
 
-def page(*, path, title, desc, body, active, image=None, og_type="website", ld=(), head_extra=""):
+def page(*, path, title, desc, body, active, image=None, og_type="website", ld=(), head_extra="",
+         robots="index, follow, max-image-preview:large"):
     canonical = SITE + path
     img = image or LOGO
     img_abs = img if img.startswith("http") else SITE + img
@@ -304,6 +337,7 @@ def page(*, path, title, desc, body, active, image=None, og_type="website", ld=(
 <link rel="canonical" href="{canonical}">
 <meta name="theme-color" content="#0a0e17">
 <meta name="author" content="{e(AUTHOR)}">
+<meta name="robots" content="{robots}">
 {head_extra}<meta property="og:site_name" content="{BRAND}">
 <meta property="og:type" content="{og_type}">
 <meta property="og:title" content="{e(title)}">
@@ -351,7 +385,7 @@ def write(rel, text):
 
 def cover_img(p, size, cls="cover"):
     src = p["cover"] or "/img/logo-mark.png"
-    return f'<img class="{cls}" src="{e(src)}" alt="" width="{size}" height="{size}" loading="lazy" decoding="async">'
+    return f'<img class="{cls}" src="{e(src)}" alt="{e(alt_for(src, p["title"]))}" width="{size}" height="{size}" loading="lazy" decoding="async">'
 
 
 def post_card(p, heading="h3"):
@@ -388,11 +422,15 @@ def item_card(item, posts, size):
     lang = f' hreflang="{item["lang"]}"' if item.get("lang") else ""
     store = (f'<a class="store" href="{item["store"]}" target="_blank" rel="noopener">App Store</a>'
              if item.get("store") else '<span class="store soon">Coming soon</span>')
+    if item.get("play"):
+        store += f'<a class="store" href="{item["play"]}" target="_blank" rel="noopener">Google Play</a>'
+    if item.get("badge"):
+        store += f'<span class="store soon">{e(item["badge"])}</span>'
     story_link = f'<a class="story" href="{url_of(story)}">Read the story</a>' if story else ""
     note = f'<p class="note">{e(item["note"])}</p>' if item.get("note") else ""
     legal = "".join(f'<a href="{u}"{lang}>{n}</a>' for n, u in item["legal"])
     return f"""<li class="card reveal">
-        <img src="/{item["icon"]}" alt="" width="{size}" height="{size}" loading="lazy" decoding="async">
+        <img src="/{item["icon"]}" alt="{e(item.get("alt") or item["name"] + " icon")}" width="{size}" height="{size}" loading="lazy" decoding="async">
         <div class="body">
           <h3>{e(item["name"])}</h3>
           <p>{e(item["text"])}</p>
@@ -421,11 +459,13 @@ def build_home(posts, blog_posts):
     for i, g in enumerate(GAMES + APPS, 1):
         is_game = g in GAMES
         obj = {"@type": ["VideoGame", "MobileApplication"] if is_game else "MobileApplication",
-               "name": g["name"], "operatingSystem": "iOS",
+               "name": g["name"], "operatingSystem": g.get("platforms", "iOS"),
                "applicationCategory": "GameApplication" if is_game else "UtilitiesApplication",
                "image": SITE + "/" + g["icon"], "description": g["text"], "author": {"@id": SITE + "/#org"}}
         if g.get("store") or g.get("site"):
             obj["url"] = g.get("store") or g.get("site")
+        if g.get("play"):
+            obj["sameAs"] = [u for u in (g.get("store"), g["play"]) if u]
         if is_game:
             obj["gamePlatform"] = "iOS"
         items.append({"@type": "ListItem", "position": i, "item": obj})
@@ -503,7 +543,7 @@ def build_home(posts, blog_posts):
   </section>
 </main>"""
     html_out = page(path="/", title=f"{BRAND} — Indie games by one developer in Turkey",
-                    desc=f"{BRAND}: indie mobile games made by one developer in Turkey. Foot Tennis Stars, Bolt & Breath, NEO, Protokol-Ø, Tomb Maze and Prof. Nano, plus the stories behind them.",
+                    desc=f"{BRAND}: indie mobile games and apps by one developer in Turkey. NEO, Bolt & Breath, Foot Tennis Stars, Protokol-Ø and the stories behind them.",
                     body=body, active="home", ld=ld, head_extra=verify)
     write("index.html", html_out)
 
@@ -528,6 +568,15 @@ def build_blog_index(blog_posts):
                                   body=body, active="blog", ld=ld))
 
 
+def seo_title(p):
+    """<title>: front-matter seo_title (keyword first); brand appended only if it stays <= 60 chars."""
+    t = p.get("seo_title") or p["title"]
+    if BRAND in t:
+        return t
+    full = f"{t} — {BRAND}"
+    return full if len(full) <= 60 or not p.get("seo_title") else t
+
+
 def share_links(p):
     from urllib.parse import quote
     u = SITE + url_of(p)
@@ -538,7 +587,7 @@ def share_links(p):
             f'<button type="button" data-copy="{e(u)}">Copy link</button></div>')
 
 
-def build_post(p, prev_p, next_p):
+def build_post(p, prev_p, next_p, by_slug=None):
     is_about = p["slug"] == "about"
     cta = ""
     if p["cta_label"] and p["cta_url"]:
@@ -552,10 +601,15 @@ def build_post(p, prev_p, next_p):
         if next_p:
             links += f'<a class="more-card next" href="{url_of(next_p)}"><span class="dir">Next</span>{cover_img(next_p, 48, "mini")}<span class="t">{e(next_p["title"])}</span></a>'
         more = f'<nav class="more-stories" aria-labelledby="more-h"><h2 id="more-h">More stories</h2><div class="more-grid">{links}</div></nav>'
+    related = ""
+    rel = [by_slug[s_] for s_ in RELATED.get(p["slug"], []) if by_slug and s_ in by_slug]
+    if rel and not is_about:
+        related = ('<p class="related"><span>Related:</span> '
+                   + " · ".join(f'<a href="{url_of(r)}">{e(r["title"])}</a>' for r in rel) + "</p>")
     meta = "" if is_about else (f'<p class="post-meta"><time datetime="{p["date"].isoformat()}">{fmt_date(p["date"])}</time>'
                                 f' · {p["minutes"]} min read · {e(AUTHOR)}</p>')
     crumb = "" if is_about else '<p class="crumb"><a href="/blog/">Blog</a></p>'
-    cover = (f'<img class="post-cover" src="{e(p["cover"])}" alt="" width="96" height="96" decoding="async" fetchpriority="high">'
+    cover = (f'<img class="post-cover" src="{e(p["cover"])}" alt="{e(alt_for(p["cover"], p["title"]))}" width="96" height="96" decoding="async" fetchpriority="high">'
              if p["cover"] else mark_svg("c", "mark post-cover"))
     body = f"""<main id="main" class="post-wrap page-top">
   <article class="post">
@@ -569,6 +623,7 @@ def build_post(p, prev_p, next_p):
 {p["html"]}
     </div>
     {cta}
+    {related}
     {"" if is_about else share_links(p)}
   </article>
   {more}
@@ -582,7 +637,7 @@ def build_post(p, prev_p, next_p):
                               "url": SITE + "/about/", "worksFor": {"@id": SITE + "/#org"},
                               "homeLocation": {"@type": "Country", "name": "Turkey"}}},
               {"@context": "https://schema.org", **ORG}]
-        title = p["title"] if BRAND in p["title"] else f"{p['title']} — {BRAND}"
+        title = seo_title(p)
         path, active, og = "/about/", "about", "profile"
     else:
         ld = [{"@context": "https://schema.org", "@type": "BlogPosting", "headline": p["title"],
@@ -594,7 +649,11 @@ def build_post(p, prev_p, next_p):
                "publisher": {"@type": "Organization", "name": BRAND, "url": SITE + "/",
                              "logo": {"@type": "ImageObject", "url": SITE + LOGO}}}]
         ld[0] = {k: v for k, v in ld[0].items() if v is not None}
-        title = f"{p['title']} — {BRAND}"
+        ld.append({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": SITE + "/"},
+            {"@type": "ListItem", "position": 2, "name": "Blog", "item": SITE + "/blog/"},
+            {"@type": "ListItem", "position": 3, "name": p["title"], "item": SITE + url_of(p)}]})
+        title = seo_title(p)
         path, active, og = url_of(p), "blog", "article"
     extra = ""
     if p["keywords"]:
@@ -606,6 +665,15 @@ def build_post(p, prev_p, next_p):
     write(path.strip("/") + "/index.html",
           page(path=path, title=title, desc=p["description"] or p["title"], body=body, active=active,
                image=p["cover"], og_type=og, ld=ld, head_extra=extra))
+
+
+def build_404():
+    body = ('<main id="main" class="wrap section page-top">\n  <header class="page-head">\n'
+            '    <h1>Page not found</h1>\n'
+            '    <p class="lead-left">This page doesn\'t exist or has moved. Try the <a href="/">home page</a>, '
+            'the <a href="/blog/">blog</a> or the <a href="/#games">games</a>.</p>\n  </header>\n</main>')
+    write("404.html", page(path="/404.html", title=f"Page not found — {BRAND}", desc=f"Page not found on {BRAND}.",
+                           body=body, active="", robots="noindex"))
 
 
 DEFAULT_ABOUT = dict(
@@ -668,8 +736,10 @@ def main():
     build_home(blog_posts, blog_posts)
     build_blog_index(blog_posts)
     for i, p in enumerate(blog_posts):
-        build_post(p, blog_posts[i - 1] if i > 0 else None, blog_posts[i + 1] if i + 1 < len(blog_posts) else None)
+        build_post(p, blog_posts[i - 1] if i > 0 else None, blog_posts[i + 1] if i + 1 < len(blog_posts) else None,
+                   {q["slug"]: q for q in blog_posts})
     build_post(about, None, None)
+    build_404()
     build_feed(blog_posts)
     urls = build_sitemap(blog_posts + [about], blog_posts)
     print(f"Built {len(blog_posts)} posts + about ({about['file']}) -> {len(urls)} URLs in sitemap")

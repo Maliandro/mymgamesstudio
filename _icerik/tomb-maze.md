@@ -1,18 +1,19 @@
 ---
 title: "Tomb Maze: The Labyrinth Game I Always Wanted to Make"
+seo_title: "Horror Maze Game: The Labyrinth I Always Wanted to Make"
 slug: tomb-maze
 description: "Tomb Maze: Horror Escape is a horror maze game: find your way out of the tomb before what's inside finds you. It hears you. In review, coming very soon."
 date: 2026-10-16
 order: 9
 cover: img/tomb-maze.jpg
-keywords: horror maze game, labyrinth game, escape game, tomb horror game, maze escape mobile, scary puzzle game, indie horror game
+keywords: horror maze game, labyrinth horror game, horror escape game, maze escape game, tomb escape game, indie horror game
 cta_label: Tomb Maze — coming very soon
 cta_url: https://maliandro.github.io/tomb-maze-site/
 ---
 
-Some ideas wait a long time. For me, the labyrinth was one of them. Long before I made any of the games on this site, I wanted to make a maze game: corridors, wrong turns, the moment you realize you've been here before. It took me until now to actually build it.
+Some ideas wait a long time. For me, the labyrinth was one of them. Long before I made any of the games on this site, I wanted to make a maze game: corridors, wrong turns, the moment you realize you've been here before. It took me until now to actually build it: Tomb Maze, a horror maze game.
 
-## Why a labyrinth
+## Why a labyrinth horror game
 
 There's something about mazes that other game spaces don't have. A maze is honest. There's no trick to it; the way out exists, and you simply don't know where it is. Every corridor is a small decision, and every decision could be the wrong one. I've loved that feeling since I was a kid drawing mazes on paper for other people to solve.
 
