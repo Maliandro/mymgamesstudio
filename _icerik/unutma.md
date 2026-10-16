@@ -7,8 +7,12 @@ date: 2026-10-16
 order: 2
 cover: img/unutma.jpg
 keywords: offline personal assistant app, private notes app, password vault app, no account app, on-device assistant, offline notes app iphone, reminders and to-do app
-cta_label: Read more about Unutma
-cta_url: https://unutma-blog.vercel.app
+cta_label: Get Unutma on the App Store
+cta_url: https://apps.apple.com/app/id6758889495
+cta2_label: Get it on Google Play
+cta2_url: https://play.google.com/store/apps/details?id=com.mehmet.unutma
+cta3_label: Unutma website
+cta3_url: https://unutma-blog.vercel.app
 ---
 
 Unutma, my offline personal assistant app, is the first thing I ever shipped. The name is Turkish for "don't forget," and that is exactly where it came from.
@@ -55,7 +59,3 @@ It also taught me that the app I use most isn't the fanciest one. It's the one I
 ## Where it is now
 
 Unutma has been on the App Store since February 2026 and I'm still developing it. The assistant is where I spend most of my time: better understanding, fewer unnecessary questions, more of the everyday sentences people actually say. If you try it and something feels off, that's exactly the kind of thing I want to hear about.
-
-Read more: https://unutma-blog.vercel.app
-App Store: https://apps.apple.com/app/id6758889495
-Android: Google Play https://play.google.com/store/apps/details?id=com.mehmet.unutma

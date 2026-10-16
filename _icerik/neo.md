@@ -50,5 +50,3 @@ I also learned that the first few minutes decide everything. If the opening does
 NEO: Interactive Horror Story has been on the App Store since July 2026. I keep updating it: fixing contradictions players find, smoothing the opening, improving translations. The story itself is complete and fully free.
 
 If you start, one piece of advice: take your time. The doors aren't going anywhere. You might be.
-
-App Store: https://apps.apple.com/app/id6790913836

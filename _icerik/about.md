@@ -47,5 +47,3 @@ I'm not going to pretend any of this is bigger than it is. These are small proje
 I post a short clip every day: gameplay, behind the scenes, and whatever I'm building at the moment. You can find me as **@meyade.gamesstudio** on YouTube and Instagram (TikTok and X are coming soon).
 
 If you try one of the apps or games, I'd love to hear what you think. Thanks for reading.
-
-All projects: https://meyadegamesstudio.vercel.app

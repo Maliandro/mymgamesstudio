@@ -234,6 +234,8 @@ def load_posts():
             updated=parse_date(meta.get("updated", ""), None) if meta.get("updated") else None,
             cover=local_img(meta.get("cover") if isinstance(meta.get("cover"), str) else None),
             cta_label=meta.get("cta_label") or "", cta_url=meta.get("cta_url") or "",
+            cta2_label=meta.get("cta2_label") or "", cta2_url=meta.get("cta2_url") or "",
+            cta3_label=meta.get("cta3_label") or "", cta3_url=meta.get("cta3_url") or "",
             game=meta.get("game") if isinstance(meta.get("game"), str) else "",
             minutes=max(1, math.ceil(words / 220)),
             html=enhance_images(markdown.markdown(body, extensions=["extra", "sane_lists"])),
@@ -590,9 +592,13 @@ def share_links(p):
 def build_post(p, prev_p, next_p, by_slug=None):
     is_about = p["slug"] == "about"
     cta = ""
-    if p["cta_label"] and p["cta_url"]:
-        ext = ' target="_blank" rel="noopener"' if p["cta_url"].startswith("http") else ""
-        cta = f'<p class="post-cta"><a class="btn primary" href="{e(p["cta_url"])}"{ext}>{e(p["cta_label"])}</a></p>'
+    butonlar = []
+    for i, (lk, uk) in enumerate([("cta_label", "cta_url"), ("cta2_label", "cta2_url"), ("cta3_label", "cta3_url")]):
+        if p.get(lk) and p.get(uk):
+            ext = ' target="_blank" rel="noopener"' if p[uk].startswith("http") else ""
+            butonlar.append(f'<a class="btn{" primary" if i == 0 else ""}" href="{e(p[uk])}"{ext}>{e(p[lk])}</a>')
+    if butonlar:
+        cta = '<p class="post-cta">' + " ".join(butonlar) + "</p>"
     more = ""
     if not is_about and (prev_p or next_p):
         links = ""
@@ -678,7 +684,7 @@ def build_404():
 
 DEFAULT_ABOUT = dict(
     file="(built-in)", slug="about", title="About", description=f"Mehmet Ali, the one developer behind {BRAND}.",
-    keywords=[], cover=None, cta_label="See my games on the App Store", cta_url=DEV_STORE, game="", minutes=1,
+    keywords=[], cover=None, cta_label="See my games on the App Store", cta_url=DEV_STORE, cta2_label="", cta2_url="", cta3_label="", cta3_url="", game="", minutes=1,
     date=TODAY, modified=TODAY, order=None, updated=None,
     html=f"<p>Hi, I'm Mehmet Ali, the developer behind {BRAND}. I make small mobile games and apps on my own in Turkey, "
          "and I share every step of the way with a short clip each day.</p>",

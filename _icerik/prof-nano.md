@@ -46,5 +46,3 @@ After the Turkish version has settled and I've learned from real families, I wan
 ## Where it is now
 
 Prof. Nano is currently in App Store review. When it's approved, it will appear on the App Store for Turkish-speaking families, and I'll post the link here and on the small site below. If you're a parent and you try it, tell me what your child did and didn't understand. That's the feedback that will shape what comes next.
-
-Coming soon: https://maliandro.github.io/profnano-site/

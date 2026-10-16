@@ -50,5 +50,3 @@ The second hardest thing was the dragon itself, in three ways.
 ## Where it is now
 
 Bolt & Breath: Last Dragon has been on the App Store since September 2026, and I've shipped updates every week or two since: fire from the mouth, ships that catch properly, a darker night, tilt controls, towers that collapse when they burn. Version 1.4.0 just went live. There's a long list still, and I'm not done. I still think of that first floaty paper-plane dragon every time I open the project, and it's still the game I most want to get right.
-
-App Store: https://apps.apple.com/app/id6804506347

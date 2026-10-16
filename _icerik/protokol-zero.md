@@ -46,5 +46,3 @@ Protokol-Ø is free to download and the first two modules are free. If you want 
 Protokol-Ø has been on the App Store since April 2026. It's a small game, and I'm fine with that; it was my first, and it taught me the things I needed to know before NEO and everything after it. I still go back now and then to fix things and tighten the writing.
 
 If you like thrillers where the hardest button to press is the one that says "approve," give it a try.
-
-App Store: https://apps.apple.com/app/id6761679315

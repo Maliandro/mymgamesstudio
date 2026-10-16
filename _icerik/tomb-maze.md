@@ -44,5 +44,3 @@ The other hard part was the feeling of being lost without the frustration of bei
 ## Where it is now
 
 Tomb Maze: Horror Escape is in App Store review right now and should be out very soon. There's a small page below where I'll put the link the moment it's live. When it is, play it with headphones, in a quiet room, and tell me how far you got.
-
-Coming very soon: https://maliandro.github.io/tomb-maze-site/

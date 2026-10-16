@@ -7,8 +7,10 @@ date: 2026-10-16
 order: 5
 cover: img/mobies.jpg
 keywords: customer book app, client record book app, client book app for barbers, salon client records, customer visit reminders, invoice and quote app, offline CRM for small business
-cta_label: Learn more about Mobies
-cta_url: https://mobies.vercel.app
+cta_label: Get Mobies on the App Store
+cta_url: https://apps.apple.com/app/id6766030370
+cta2_label: Mobies website
+cta2_url: https://mobies.vercel.app
 ---
 
 Mobies, my customer book app for small businesses, wasn't planned. It grew out of Unutma, almost by accident, and then it insisted on becoming its own thing.
@@ -49,6 +51,3 @@ I'm careful how I say this: your data is on your phone, and you decide where any
 ## Where it is now
 
 Mobies has been on the App Store since July 2026 and gets regular updates. The visit rhythm, the monthly view, CSV import of old records and sector-specific customer fields are all recent. Next I'm working on making the first five minutes clearer, so a new shop owner sees the point without reading anything.
-
-Learn more: https://mobies.vercel.app
-App Store: https://apps.apple.com/app/id6766030370
