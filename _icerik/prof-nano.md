@@ -15,7 +15,7 @@ Prof. Nano is the project closest to home. I'm a father, and most of what I've b
 
 ## A science game, for children
 
-Prof. Nano is a science game for kids. The idea is simple: a friendly professor, short activities, and real science underneath — the kind of "why does this happen?" questions children ask constantly and adults answer too quickly.
+Prof. Nano is a science game for kids. The idea is simple: a friendly professor, short activities, and real science underneath — the kind of "why does this happen?" questions children ask all the time and adults often find hard to answer, or to explain in a way that really makes sense.
 
 I wanted play first. If a child feels they're doing homework, I've lost. The learning should be the thing they bump into while having fun, not the thing they're asked to sit through.
 
