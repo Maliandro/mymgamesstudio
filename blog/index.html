@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blog — MEYADE GAMES STUDIO</title>
+<meta name="description" content="Stories behind the indie games of MEYADE GAMES STUDIO: development notes, launches and lessons from one developer in Turkey.">
+<link rel="canonical" href="https://meyadegamesstudio.vercel.app/blog/">
+<meta name="theme-color" content="#0a0e17">
+<meta name="author" content="Mehmet Ali D.">
+<meta property="og:site_name" content="MEYADE GAMES STUDIO">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Blog — MEYADE GAMES STUDIO">
+<meta property="og:description" content="Stories behind the indie games of MEYADE GAMES STUDIO: development notes, launches and lessons from one developer in Turkey.">
+<meta property="og:url" content="https://meyadegamesstudio.vercel.app/blog/">
+<meta property="og:image" content="https://meyadegamesstudio.vercel.app/img/logo.png">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Blog — MEYADE GAMES STUDIO">
+<meta name="twitter:description" content="Stories behind the indie games of MEYADE GAMES STUDIO: development notes, launches and lessons from one developer in Turkey.">
+<meta name="twitter:image" content="https://meyadegamesstudio.vercel.app/img/logo.png">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="MEYADE GAMES STUDIO blog" href="/feed.xml">
+<link rel="stylesheet" href="/style.css">
+<script>document.documentElement.classList.add('js')</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Blog", "name": "MEYADE GAMES STUDIO blog", "url": "https://meyadegamesstudio.vercel.app/blog/", "inLanguage": "en", "publisher": {"@id": "https://meyadegamesstudio.vercel.app/#org"}, "blogPost": [{"@type": "BlogPosting", "headline": "Unutma: My First Experiment, an Offline Personal Assistant", "url": "https://meyadegamesstudio.vercel.app/blog/unutma/", "datePublished": "2026-10-16"}, {"@type": "BlogPosting", "headline": "Protokol-Ø: What I Learned Making My First Game", "url": "https://meyadegamesstudio.vercel.app/blog/protokol-zero/", "datePublished": "2026-10-16"}, {"@type": "BlogPosting", "headline": "NEO: An Interactive Horror Story With 20 Endings", "url": "https://meyadegamesstudio.vercel.app/blog/neo/", "datePublished": "2026-10-16"}, {"@type": "BlogPosting", "headline": "Mobies: A Customer Book for Small Businesses", "url": "https://meyadegamesstudio.vercel.app/blog/mobies/", "datePublished": "2026-10-16"}, {"@type": "BlogPosting", "headline": "Bolt & Breath: Why I Wanted to Ride a Dragon", "url": "https://meyadegamesstudio.vercel.app/blog/bolt-and-breath/", "datePublished": "2026-10-16"}, {"@type": "BlogPosting", "headline": "Foot Tennis Stars: From Stick Figures to Online Matches", "url": "https://meyadegamesstudio.vercel.app/blog/foot-tennis-stars/", "datePublished": "2026-10-16"}, {"@type": "BlogPosting", "headline": "Prof. Nano: A Science Game for Turkish Kids", "url": "https://meyadegamesstudio.vercel.app/blog/prof-nano/", "datePublished": "2026-10-16"}, {"@type": "BlogPosting", "headline": "Tomb Maze: The Labyrinth Game I Always Wanted to Make", "url": "https://meyadegamesstudio.vercel.app/blog/tomb-maze/", "datePublished": "2026-10-16"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <div class="wrap bar">
+    <a class="brand" href="/" aria-label="MEYADE GAMES STUDIO home"><svg class="mark mark-sm" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><defs><linearGradient id="gmn" x1="120" y1="0" x2="392" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#36bfcd"/><stop offset="1" stop-color="#6c6ae8"/></linearGradient><linearGradient id="grn" x1="30" y1="0" x2="482" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#6fb7ab"/><stop offset="1" stop-color="#7458f2"/></linearGradient></defs><g class="ring" fill="url(#grn)"><rect x="30.3" y="285.2" width="18.0" height="18.0" rx="4.5"/><rect x="27.0" y="247.0" width="18.0" height="18.0" rx="4.5"/><rect x="30.3" y="208.8" width="18.0" height="18.0" rx="4.5"/><rect x="40.3" y="171.8" width="18.0" height="18.0" rx="4.5"/><rect x="56.5" y="137.0" width="18.0" height="18.0" rx="4.5"/><rect x="78.5" y="105.6" width="18.0" height="18.0" rx="4.5"/><rect x="105.6" y="78.5" width="18.0" height="18.0" rx="4.5"/><rect x="137.0" y="56.5" width="18.0" height="18.0" rx="4.5"/><rect x="171.9" y="40.4" width="17.8" height="17.8" rx="4.5"/><rect x="209.4" y="30.9" width="16.8" height="16.8" rx="4.2"/><rect x="248.1" y="28.1" width="15.9" height="15.9" rx="4.0"/><rect x="286.7" y="31.9" width="14.9" height="14.9" rx="3.7"/><rect x="324.3" y="42.3" width="14.0" height="14.0" rx="3.5"/><rect x="359.5" y="59.0" width="13.0" height="13.0" rx="3.2"/><rect x="439.5" y="139.0" width="14.0" height="14.0" rx="3.5"/><rect x="454.7" y="172.7" width="16.1" height="16.1" rx="4.0"/><rect x="463.6" y="208.8" width="18.1" height="18.1" rx="4.5"/><rect x="466.1" y="246.1" width="19.9" height="19.9" rx="5.0"/><rect x="461.9" y="283.5" width="21.4" height="21.4" rx="5.4"/><rect x="451.4" y="319.9" width="22.7" height="22.7" rx="5.7"/><rect x="434.8" y="354.2" width="23.5" height="23.5" rx="5.9"/><rect x="412.6" y="385.4" width="23.9" height="23.9" rx="6.0"/><rect x="385.4" y="412.6" width="23.9" height="23.9" rx="6.0"/><rect x="354.2" y="434.8" width="23.5" height="23.5" rx="5.9"/><rect x="319.9" y="451.4" width="22.7" height="22.7" rx="5.7"/><rect x="283.5" y="461.9" width="21.4" height="21.4" rx="5.4"/><rect x="246.1" y="466.1" width="19.9" height="19.9" rx="5.0"/><rect x="208.8" y="463.6" width="18.1" height="18.1" rx="4.5"/><rect x="172.7" y="454.7" width="16.1" height="16.1" rx="4.0"/><rect x="139.0" y="439.5" width="14.0" height="14.0" rx="3.5"/></g><g fill="url(#gmn)"><rect x="123" y="123" width="50" height="50" rx="9"/><rect x="123" y="177" width="50" height="50" rx="9"/><rect x="123" y="231" width="50" height="50" rx="9"/><rect x="123" y="285" width="50" height="50" rx="9"/><rect x="123" y="339" width="50" height="50" rx="9"/><rect x="177" y="177" width="50" height="50" rx="9"/><rect x="231" y="231" width="50" height="50" rx="9"/><rect x="285" y="177" width="50" height="50" rx="9"/><rect x="339" y="123" width="50" height="50" rx="9"/><rect x="339" y="177" width="50" height="50" rx="9"/><rect x="339" y="231" width="50" height="50" rx="9"/><rect x="339" y="285" width="50" height="50" rx="9"/><rect x="339" y="339" width="50" height="50" rx="9"/></g></svg><span>MEYADE GAMES STUDIO</span></a>
+    <nav class="nav" aria-label="Main"><a href="/">Home</a><a href="/#games">Games</a><a href="/blog/" aria-current="page">Blog</a><a href="/about/">About</a></nav>
+  </div>
+</header>
+<main id="main" class="wrap section page-top">
+  <header class="page-head">
+    <h1>Blog</h1>
+    <p class="lead-left">Stories behind the games: how they started, what went wrong and what I learned making them.</p>
+  </header>
+  <ul class="post-list">
+<li class="post-card reveal">
+  <a href="/blog/unutma/">
+    <img class="cover" src="/img/unutma.jpg" alt="" width="64" height="64" loading="lazy" decoding="async">
+    <span class="pc-body">
+      <h2 class="pc-title">Unutma: My First Experiment, an Offline Personal Assistant</h2>
+      <span class="pc-desc">How a daily worry (&#x27;did I lock the door?&#x27;) became Unutma: a private notes app, password vault and offline personal assistant that lives on your phone.</span>
+      <span class="pc-meta"><time datetime="2026-10-16">Oct 16, 2026</time> · 4 min read</span>
+    </span>
+  </a>
+</li>
+<li class="post-card reveal">
+  <a href="/blog/protokol-zero/">
+    <img class="cover" src="/img/protokol-0.jpg" alt="" width="64" height="64" loading="lazy" decoding="async">
+    <span class="pc-body">
+      <h2 class="pc-title">Protokol-Ø: What I Learned Making My First Game</h2>
+      <span class="pc-desc">Protokol-Ø is an AI thriller told through cases: approve, reject or escalate, and your decisions matter. What my first game taught me about making games.</span>
+      <span class="pc-meta"><time datetime="2026-10-16">Oct 16, 2026</time> · 3 min read</span>
+    </span>
+  </a>
+</li>
+<li class="post-card reveal">
+  <a href="/blog/neo/">
+    <img class="cover" src="/img/neo.jpg" alt="" width="64" height="64" loading="lazy" decoding="async">
+    <span class="pc-body">
+      <h2 class="pc-title">NEO: An Interactive Horror Story With 20 Endings</h2>
+      <span class="pc-desc">NEO started as a small interactive story experiment and grew to 285 scenes, 675 branches and 20 endings, all free. The clock stopped at 17:34.</span>
+      <span class="pc-meta"><time datetime="2026-10-16">Oct 16, 2026</time> · 3 min read</span>
+    </span>
+  </a>
+</li>
+<li class="post-card reveal">
+  <a href="/blog/mobies/">
+    <img class="cover" src="/img/mobies.jpg" alt="" width="64" height="64" loading="lazy" decoding="async">
+    <span class="pc-body">
+      <h2 class="pc-title">Mobies: A Customer Book for Small Businesses</h2>
+      <span class="pc-desc">Mobies grew out of Unutma into an app for barbers, salons, tailors and repair shops: who came, who&#x27;s late, who&#x27;s due, plus quotes, invoices and reminders.</span>
+      <span class="pc-meta"><time datetime="2026-10-16">Oct 16, 2026</time> · 3 min read</span>
+    </span>
+  </a>
+</li>
+<li class="post-card reveal">
+  <a href="/blog/bolt-and-breath/">
+    <img class="cover" src="/img/bolt-and-breath.jpg" alt="" width="64" height="64" loading="lazy" decoding="async">
+    <span class="pc-body">
+      <h2 class="pc-title">Bolt &amp; Breath: Why I Wanted to Ride a Dragon</h2>
+      <span class="pc-desc">I wanted to ride a dragon, so I built one in Unity. The story of Bolt &amp; Breath: Last Dragon, the sea that fought back, and the updates still coming.</span>
+      <span class="pc-meta"><time datetime="2026-10-16">Oct 16, 2026</time> · 4 min read</span>
+    </span>
+  </a>
+</li>
+<li class="post-card reveal">
+  <a href="/blog/foot-tennis-stars/">
+    <img class="cover" src="/img/foot-tennis-stars.jpg" alt="" width="64" height="64" loading="lazy" decoding="async">
+    <span class="pc-body">
+      <h2 class="pc-title">Foot Tennis Stars: From Stick Figures to Online Matches</h2>
+      <span class="pc-desc">Foot Tennis Stars started as a 2D offline game. Then came a league, a cup, 3D characters and, hardest of all, online matches. Here&#x27;s how it grew.</span>
+      <span class="pc-meta"><time datetime="2026-10-16">Oct 16, 2026</time> · 3 min read</span>
+    </span>
+  </a>
+</li>
+<li class="post-card reveal">
+  <a href="/blog/prof-nano/">
+    <img class="cover" src="/img/prof-nano.jpg" alt="" width="64" height="64" loading="lazy" decoding="async">
+    <span class="pc-body">
+      <h2 class="pc-title">Prof. Nano: A Science Game for Turkish Kids</h2>
+      <span class="pc-desc">Prof. Nano is a science game for children, built first in Turkish and now in App Store review. Why I made it, and what I plan to add for parents and kids.</span>
+      <span class="pc-meta"><time datetime="2026-10-16">Oct 16, 2026</time> · 3 min read</span>
+    </span>
+  </a>
+</li>
+<li class="post-card reveal">
+  <a href="/blog/tomb-maze/">
+    <img class="cover" src="/img/tomb-maze.jpg" alt="" width="64" height="64" loading="lazy" decoding="async">
+    <span class="pc-body">
+      <h2 class="pc-title">Tomb Maze: The Labyrinth Game I Always Wanted to Make</h2>
+      <span class="pc-desc">Tomb Maze: Horror Escape is a horror maze game: find your way out of the tomb before what&#x27;s inside finds you. It hears you. In review, coming very soon.</span>
+      <span class="pc-meta"><time datetime="2026-10-16">Oct 16, 2026</time> · 3 min read</span>
+    </span>
+  </a>
+</li>
+  </ul>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <nav class="foot-links" aria-label="Footer"><a href="/">Home</a><a href="/blog/">Blog</a><a href="/about/">About</a><a href="/feed.xml">RSS</a><a href="https://www.youtube.com/channel/UCr0haylnBMX4Pmm43VYPXzw" target="_blank" rel="noopener">YouTube</a><a href="https://instagram.com/meyade.gamesstudio" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/meyade.gamesstudio" target="_blank" rel="noopener">Facebook</a></nav>
+    <p>© 2026 Mehmet Ali D. · MEYADE GAMES STUDIO</p>
+  </div>
+</footer>
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  var still=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!('IntersectionObserver' in window)||still){els.forEach(function(el){el.classList.add('in')});}
+  else{var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{rootMargin:'0px 0px -6% 0px'});
+    els.forEach(function(el){io.observe(el)});}
+  document.querySelectorAll('[data-copy]').forEach(function(b){b.addEventListener('click',function(){
+    var done=function(){b.textContent='Link copied';setTimeout(function(){b.textContent='Copy link'},2000)};
+    if(navigator.clipboard){navigator.clipboard.writeText(b.dataset.copy).then(done,function(){prompt('Copy this link:',b.dataset.copy)});}
+    else{prompt('Copy this link:',b.dataset.copy);}
+  });});
+})();
+</script>
+</body>
+</html>

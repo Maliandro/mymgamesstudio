@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>MEYADE GAMES STUDIO blog</title>
+  <link>https://meyadegamesstudio.vercel.app/blog/</link>
+  <atom:link href="https://meyadegamesstudio.vercel.app/feed.xml" rel="self" type="application/rss+xml"/>
+  <description>Stories behind the indie games of MEYADE GAMES STUDIO.</description>
+  <language>en</language>
+  <lastBuildDate>Fri, 16 Oct 2026 09:00:00 +0000</lastBuildDate>
+  <item>
+    <title>Unutma: My First Experiment, an Offline Personal Assistant</title>
+    <link>https://meyadegamesstudio.vercel.app/blog/unutma/</link>
+    <guid isPermaLink="true">https://meyadegamesstudio.vercel.app/blog/unutma/</guid>
+    <pubDate>Fri, 16 Oct 2026 09:00:00 +0000</pubDate>
+    <description>How a daily worry (&#x27;did I lock the door?&#x27;) became Unutma: a private notes app, password vault and offline personal assistant that lives on your phone.</description>
+  </item>
+  <item>
+    <title>Protokol-Ø: What I Learned Making My First Game</title>
+    <link>https://meyadegamesstudio.vercel.app/blog/protokol-zero/</link>
+    <guid isPermaLink="true">https://meyadegamesstudio.vercel.app/blog/protokol-zero/</guid>
+    <pubDate>Fri, 16 Oct 2026 09:00:00 +0000</pubDate>
+    <description>Protokol-Ø is an AI thriller told through cases: approve, reject or escalate, and your decisions matter. What my first game taught me about making games.</description>
+  </item>
+  <item>
+    <title>NEO: An Interactive Horror Story With 20 Endings</title>
+    <link>https://meyadegamesstudio.vercel.app/blog/neo/</link>
+    <guid isPermaLink="true">https://meyadegamesstudio.vercel.app/blog/neo/</guid>
+    <pubDate>Fri, 16 Oct 2026 09:00:00 +0000</pubDate>
+    <description>NEO started as a small interactive story experiment and grew to 285 scenes, 675 branches and 20 endings, all free. The clock stopped at 17:34.</description>
+  </item>
+  <item>
+    <title>Mobies: A Customer Book for Small Businesses</title>
+    <link>https://meyadegamesstudio.vercel.app/blog/mobies/</link>
+    <guid isPermaLink="true">https://meyadegamesstudio.vercel.app/blog/mobies/</guid>
+    <pubDate>Fri, 16 Oct 2026 09:00:00 +0000</pubDate>
+    <description>Mobies grew out of Unutma into an app for barbers, salons, tailors and repair shops: who came, who&#x27;s late, who&#x27;s due, plus quotes, invoices and reminders.</description>
+  </item>
+  <item>
+    <title>Bolt &amp; Breath: Why I Wanted to Ride a Dragon</title>
+    <link>https://meyadegamesstudio.vercel.app/blog/bolt-and-breath/</link>
+    <guid isPermaLink="true">https://meyadegamesstudio.vercel.app/blog/bolt-and-breath/</guid>
+    <pubDate>Fri, 16 Oct 2026 09:00:00 +0000</pubDate>
+    <description>I wanted to ride a dragon, so I built one in Unity. The story of Bolt &amp; Breath: Last Dragon, the sea that fought back, and the updates still coming.</description>
+  </item>
+  <item>
+    <title>Foot Tennis Stars: From Stick Figures to Online Matches</title>
+    <link>https://meyadegamesstudio.vercel.app/blog/foot-tennis-stars/</link>
+    <guid isPermaLink="true">https://meyadegamesstudio.vercel.app/blog/foot-tennis-stars/</guid>
+    <pubDate>Fri, 16 Oct 2026 09:00:00 +0000</pubDate>
+    <description>Foot Tennis Stars started as a 2D offline game. Then came a league, a cup, 3D characters and, hardest of all, online matches. Here&#x27;s how it grew.</description>
+  </item>
+  <item>
+    <title>Prof. Nano: A Science Game for Turkish Kids</title>
+    <link>https://meyadegamesstudio.vercel.app/blog/prof-nano/</link>
+    <guid isPermaLink="true">https://meyadegamesstudio.vercel.app/blog/prof-nano/</guid>
+    <pubDate>Fri, 16 Oct 2026 09:00:00 +0000</pubDate>
+    <description>Prof. Nano is a science game for children, built first in Turkish and now in App Store review. Why I made it, and what I plan to add for parents and kids.</description>
+  </item>
+  <item>
+    <title>Tomb Maze: The Labyrinth Game I Always Wanted to Make</title>
+    <link>https://meyadegamesstudio.vercel.app/blog/tomb-maze/</link>
+    <guid isPermaLink="true">https://meyadegamesstudio.vercel.app/blog/tomb-maze/</guid>
+    <pubDate>Fri, 16 Oct 2026 09:00:00 +0000</pubDate>
+    <description>Tomb Maze: Horror Escape is a horror maze game: find your way out of the tomb before what&#x27;s inside finds you. It hears you. In review, coming very soon.</description>
+  </item>
+</channel>
+</rss>
