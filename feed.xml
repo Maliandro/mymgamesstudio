@@ -7,7 +7,7 @@
   <atom:link href="https://meyadegamesstudio.vercel.app/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Stories behind the indie games of MEYADE GAMES STUDIO.</description>
   <language>en</language>
-  <lastBuildDate>Fri, 16 Oct 2026 09:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 19 Oct 2026 09:00:00 +0000</lastBuildDate>
   <item>
     <title>Unutma: My First Experiment, an Offline Personal Assistant</title>
     <link>https://meyadegamesstudio.vercel.app/blog/unutma/</link>
@@ -63,6 +63,13 @@
     <guid isPermaLink="true">https://meyadegamesstudio.vercel.app/blog/tomb-maze/</guid>
     <pubDate>Fri, 16 Oct 2026 09:00:00 +0000</pubDate>
     <description>Tomb Maze: Horror Escape is a horror maze game: find your way out of the tomb before what&#x27;s inside finds you. It hears you. In review, coming very soon.</description>
+  </item>
+  <item>
+    <title>Tomb Maze Is Out: Find the Way Out, and Listen</title>
+    <link>https://meyadegamesstudio.vercel.app/blog/tomb-maze-out-now/</link>
+    <guid isPermaLink="true">https://meyadegamesstudio.vercel.app/blog/tomb-maze-out-now/</guid>
+    <pubDate>Mon, 19 Oct 2026 09:00:00 +0000</pubDate>
+    <description>Tomb Maze: Horror Escape, my horror maze game, is now on the App Store. Free. Play it with headphones and tell me how far you got.</description>
   </item>
 </channel>
 </rss>
