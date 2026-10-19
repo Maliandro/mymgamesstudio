@@ -69,16 +69,16 @@ GAMES = [
     dict(name="Tomb Maze: Horror Escape", icon="img/tomb-maze.jpg", keys=["tomb-maze", "tomb"],
          alt="Tomb Maze: Horror Escape horror maze game icon",
          text="Escape the mazes beneath a collapsing pyramid, with Guardians that see and hear you.",
-         store=None, site="https://maliandro.github.io/tomb-maze-site/",
+         store="https://apps.apple.com/app/id6819377082", site="https://maliandro.github.io/tomb-maze-site/",
          legal=[("Privacy", "https://maliandro.github.io/tomb-maze-site/privacy.html"),
                 ("Terms", "https://maliandro.github.io/tomb-maze-site/terms.html"),
                 ("Support", "https://maliandro.github.io/tomb-maze-site/support.html")]),
     dict(name="Prof. Nano", icon="img/prof-nano.jpg", keys=["prof-nano", "nano"],
          alt="Prof. Nano science game for kids icon",
-         text="A game that sparks kids' curiosity about science.", note="Turkish first · more languages later",
-         store=None, site="https://maliandro.github.io/profnano-site/", lang="tr",
+         text="A game that sparks kids' curiosity about science.", note="Turkish now · English coming soon",
+         store="https://apps.apple.com/app/id6800853916", site="https://maliandro.github.io/profnano-site/",
          legal=[("Website", "https://maliandro.github.io/profnano-site/"),
-                ("Privacy", "https://maliandro.github.io/profnano-site/gizlilik.html"),
+                ("Privacy", "https://maliandro.github.io/profnano-site/privacy.html"),
                 ("Terms", "https://maliandro.github.io/profnano-site/kosullar.html"),
                 ("Support", "https://maliandro.github.io/profnano-site/")]),
 ]
@@ -514,7 +514,8 @@ def build_home(posts, blog_posts):
       <li><span class="when">Jul 2026</span><span class="what"><strong>NEO</strong> — an interactive horror story where the wrong door kills you</span></li>
       <li><span class="when">Jul 2026</span><span class="what"><strong>Mobies</strong> — a customer book for small businesses</span></li>
       <li><span class="when">Sep 2026</span><span class="what"><strong>Foot Tennis Stars</strong> and <strong>Bolt &amp; Breath</strong></span></li>
-      <li><span class="when">Next</span><span class="what"><strong>Tomb Maze</strong> and <strong>Prof. Nano</strong>, coming soon</span></li>
+      <li><span class="when">Oct 2026</span><span class="what"><strong>Tomb Maze</strong> and <strong>Prof. Nano</strong>, both out on the same day</span></li>
+      <li><span class="when">Next</span><span class="what"><strong>Prof. Nano</strong> in English, and Android</span></li>
     </ol>
     <p>Every day I post a short clip: gameplay, behind the scenes and what I'm building next. Most of my games are free on the App Store.</p>
   </section>

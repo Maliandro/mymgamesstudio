@@ -2,13 +2,13 @@
 title: "Tomb Maze: The Labyrinth Game I Always Wanted to Make"
 seo_title: "Horror Maze Game: The Labyrinth I Always Wanted to Make"
 slug: tomb-maze
-description: "Tomb Maze: Horror Escape is a horror maze game: find your way out of the tomb before what's inside finds you. It hears you. In review, coming very soon."
+description: "Tomb Maze: Horror Escape is a horror maze game: find your way out of the tomb before what's inside finds you. It hears you. Out now, free on the App Store."
 date: 2026-10-16
 order: 9
 cover: img/tomb-maze.jpg
 keywords: horror maze game, labyrinth horror game, horror escape game, maze escape game, tomb escape game, indie horror game
-cta_label: Tomb Maze — coming very soon
-cta_url: https://maliandro.github.io/tomb-maze-site/
+cta_label: Get Tomb Maze on the App Store
+cta_url: https://apps.apple.com/app/id6819377082
 ---
 
 Some ideas wait a long time. For me, the labyrinth was one of them. Long before I made any of the games on this site, I wanted to make a maze game: corridors, wrong turns, the moment you realize you've been here before. It took me until now to actually build it: Tomb Maze, a horror maze game.
@@ -43,4 +43,4 @@ The other hard part was the feeling of being lost without the frustration of bei
 
 ## Where it is now
 
-Tomb Maze: Horror Escape is in App Store review right now and should be out very soon. There's a small page below where I'll put the link the moment it's live. When it is, play it with headphones, in a quiet room, and tell me how far you got.
+Tomb Maze: Horror Escape is out now on the App Store for iPhone and iPad, and it's free. Play it with headphones, in a quiet room, and tell me how far you got. I wrote a short launch note too: [Tomb Maze is out](/blog/tomb-maze-out-now/).

@@ -33,8 +33,8 @@ It is a one-person studio. I design, code, test on my own phone, write the store
 - **Mobies** — a customer book for small businesses, grown out of Unutma.
 - **Bolt & Breath: Last Dragon** — you are the last dragon burning the royal fleet; built in Unity.
 - **Foot Tennis Stars** — football meets volleyball, now with online matches.
-- **Prof. Nano** — a science game that tries to spark kids' curiosity about science; Turkish first, currently in App Store review.
-- **Tomb Maze: Horror Escape** — a horror maze escape, also in review and coming very soon.
+- **Prof. Nano** — a science game that tries to spark kids' curiosity about science; out now in Turkish, with English on the way.
+- **Tomb Maze: Horror Escape** — a horror maze escape; out now, free on the App Store.
 
 Each of these has its own post on this blog, where I tell the honest version: what I wanted, what went wrong, and what's next.
 

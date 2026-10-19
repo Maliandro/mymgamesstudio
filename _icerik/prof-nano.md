@@ -2,13 +2,13 @@
 title: "Prof. Nano: A Game That Sparks Kids' Curiosity About Science"
 seo_title: "Science Game for Kids That Sparks Curiosity: Prof. Nano"
 slug: prof-nano
-description: "Prof. Nano is a science game for kids, made first in Turkish and now in App Store review. Why I built it as a father, and what's planned for parents."
+description: "Prof. Nano is a science game for kids, out now in Turkish on the App Store, with English coming next. Why I built it as a father, and what's planned for parents."
 date: 2026-10-16
 order: 8
 cover: img/prof-nano.jpg
 keywords: science game for kids, educational game for children, kids science games app, STEM game for kids, science curiosity for kids, parent friendly game
-cta_label: Prof. Nano — coming soon
-cta_url: https://maliandro.github.io/profnano-site/
+cta_label: Get Prof. Nano on the App Store
+cta_url: https://apps.apple.com/app/id6800853916
 ---
 
 Prof. Nano is the project closest to home. I'm a father, and most of what I've built so far isn't for my child. Horror stories and dragons are not what I want on the family tablet. So I made something that is.
@@ -45,4 +45,4 @@ After the Turkish version has settled and I've learned from real families, I wan
 
 ## Where it is now
 
-Prof. Nano is currently in App Store review. When it's approved, it will appear on the App Store in Türkiye first, and I'll post the link here and on the small site below. If you're a parent and you try it, tell me what your child did and didn't understand. That's the feedback that will shape what comes next.
+Prof. Nano is out now on the App Store in Turkish, and the English version is on its way to review. The first island, Lighthouse Point, is free to play. If you're a parent and you try it, tell me what your child did and didn't understand. That's the feedback that will shape what comes next.
