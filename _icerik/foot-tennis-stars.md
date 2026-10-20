@@ -49,6 +49,6 @@ One thing that genuinely surprised me: a Turkish foot-tennis community found the
 
 ## Where it is now
 
-Foot Tennis Stars has been on the App Store since September 2026, in several languages. The newest version I've been working on adds online matches and a World Cup mode. Online is where my attention is right now: smoother matches, fairer outcomes, faster matchmaking. An Android version is coming soon, too.
+Foot Tennis Stars has been on the App Store since September 2026, in several languages. The newest version I've been working on adds online matches and a Nations Cup mode. Online is where my attention is right now: smoother matches, fairer outcomes, faster matchmaking. An Android version is coming soon, too.
 
 If you play, I'd love to know how a match felt, especially an online one.
