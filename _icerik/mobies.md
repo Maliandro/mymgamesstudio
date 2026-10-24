@@ -8,7 +8,7 @@ order: 5
 cover: img/mobies.jpg
 keywords: customer book app, client record book app, client book app for barbers, salon client records, customer visit reminders, invoice and quote app, offline CRM for small business
 cta_label: Get Mobies on the App Store
-cta_url: https://apps.apple.com/app/id6766030370
+cta_url: https://apps.apple.com/app/apple-store/id6766030370?pt=128529947&ct=blog&mt=8
 cta2_label: Mobies website
 cta2_url: https://mobies.vercel.app
 ---

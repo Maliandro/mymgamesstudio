@@ -8,7 +8,7 @@ order: 10
 cover: img/tomb-maze.jpg
 keywords: horror maze game, labyrinth horror game, horror escape game, indie horror game iphone, maze escape game
 cta_label: Get Tomb Maze on the App Store
-cta_url: https://apps.apple.com/app/id6819377082
+cta_url: https://apps.apple.com/app/apple-store/id6819377082?pt=128529947&ct=blog&mt=8
 ---
 
 Tomb Maze: Horror Escape is out today on the App Store for iPhone and iPad.

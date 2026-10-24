@@ -8,7 +8,7 @@ order: 3
 cover: img/protokol-0.jpg
 keywords: AI thriller story game, decision making story game, story choice game, moral choice game, text based thriller, story game ios, indie story game
 cta_label: Play Protokol-Ø on the App Store
-cta_url: https://apps.apple.com/app/id6761679315
+cta_url: https://apps.apple.com/app/apple-store/id6761679315?pt=128529947&ct=blog&mt=8
 ---
 
 After Unutma, I wanted to try something I had never done: make a game. Not a big one. Something I could actually finish, with a story I cared about. That became PROTOKOL-Ø, my first game experiment: an AI thriller story game.

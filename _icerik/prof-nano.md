@@ -8,7 +8,7 @@ order: 8
 cover: img/prof-nano.jpg
 keywords: science game for kids, educational game for children, kids science games app, STEM game for kids, science curiosity for kids, parent friendly game
 cta_label: Get Prof. Nano on the App Store
-cta_url: https://apps.apple.com/app/id6800853916
+cta_url: https://apps.apple.com/app/apple-store/id6800853916?pt=128529947&ct=blog&mt=8
 ---
 
 Prof. Nano is the project closest to home. I'm a father, and most of what I've built so far isn't for my child. Horror stories and dragons are not what I want on the family tablet. So I made something that is.

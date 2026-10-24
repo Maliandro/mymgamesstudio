@@ -8,7 +8,7 @@ order: 6
 cover: img/bolt-and-breath.jpg
 keywords: dragon flying game, dragon game iphone, dragon simulator ios, burn the fleet dragon game, ballista shooter, Unity indie game, solo game development
 cta_label: Get Bolt & Breath on the App Store
-cta_url: https://apps.apple.com/app/id6804506347
+cta_url: https://apps.apple.com/app/apple-store/id6804506347?pt=128529947&ct=blog&mt=8
 ---
 
 I'll admit the origin plainly: I'm a Game of Thrones fan, and a Khaleesi fan in particular. Every time she climbed onto a dragon I thought the same thing: I want to do that. Not watch it. Do it.

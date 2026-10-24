@@ -8,7 +8,7 @@ order: 9
 cover: img/tomb-maze.jpg
 keywords: horror maze game, labyrinth horror game, horror escape game, maze escape game, tomb escape game, indie horror game
 cta_label: Get Tomb Maze on the App Store
-cta_url: https://apps.apple.com/app/id6819377082
+cta_url: https://apps.apple.com/app/apple-store/id6819377082?pt=128529947&ct=blog&mt=8
 ---
 
 Some ideas wait a long time. For me, the labyrinth was one of them. Long before I made any of the games on this site, I wanted to make a maze game: corridors, wrong turns, the moment you realize you've been here before. It took me until now to actually build it: Tomb Maze, a horror maze game.

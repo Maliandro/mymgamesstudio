@@ -8,7 +8,7 @@ order: 4
 cover: img/neo.jpg
 keywords: interactive horror story game, choose your own adventure horror game, horror game with multiple endings, text based horror game, time loop horror game, free horror game ios
 cta_label: Play NEO on the App Store
-cta_url: https://apps.apple.com/app/id6790913836
+cta_url: https://apps.apple.com/app/apple-store/id6790913836?pt=128529947&ct=blog&mt=8
 ---
 
 NEO, my interactive horror story game, didn't start as a big project. After Protokol-Ø, I wanted to try one specific thing: a story where the branches really branch, where two players could finish and have genuinely different experiences. A small experiment. It didn't stay small.

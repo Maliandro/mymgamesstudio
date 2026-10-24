@@ -8,7 +8,7 @@ order: 2
 cover: img/unutma.jpg
 keywords: offline personal assistant app, private notes app, password vault app, no account app, on-device assistant, offline notes app iphone, reminders and to-do app
 cta_label: Get Unutma on the App Store
-cta_url: https://apps.apple.com/app/id6758889495
+cta_url: https://apps.apple.com/app/apple-store/id6758889495?pt=128529947&ct=blog&mt=8
 cta2_label: Get it on Google Play
 cta2_url: https://play.google.com/store/apps/details?id=com.mehmet.unutma
 cta3_label: Unutma website

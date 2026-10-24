@@ -8,7 +8,7 @@ order: 11
 cover: img/foot-tennis-stars-2.jpg
 keywords: foot tennis game, football tennis game, footvolley game, nations cup game, mobile sports game, indie sports game, foot tennis stars 2.0
 cta_label: Play Foot Tennis Stars on the App Store
-cta_url: https://apps.apple.com/app/id6804052429
+cta_url: https://apps.apple.com/app/apple-store/id6804052429?pt=128529947&ct=blog&mt=8
 ---
 
 Some weeks you add a feature. This week we tore Foot Tennis Stars down to the floorboards and built it again. The result will be version 2.0, and it's the biggest update the game has ever had.
