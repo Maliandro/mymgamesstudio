@@ -28,7 +28,7 @@ It is a one-person studio. I design, code, test on my own phone, write the store
 ## What I've made so far
 
 - **Unutma** — my first project. A private personal assistant and notes app that keeps everything on your phone and works without internet.
-- **Protokol-Ø** — my first game. An AI thriller told through cases, where your decisions matter.
+- **Protokol-Ø** — my first game. A dystopian thriller told through cases, where your decisions matter.
 - **NEO: Interactive Horror Story** — a branching horror story with 285 scenes, 675 branches and 20 endings, all free.
 - **Mobies** — a customer book for small businesses, grown out of Unutma.
 - **Bolt & Breath: Last Dragon** — you are the last dragon burning the royal fleet; built in Unity.

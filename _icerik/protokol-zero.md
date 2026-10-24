@@ -1,23 +1,23 @@
 ---
 title: "Protokol-Ø: What I Learned Making My First Game"
-seo_title: "AI Thriller Story Game: What Protokol-Ø Taught Me"
+seo_title: "Story Thriller Game: What Protokol-Ø Taught Me"
 slug: protokol-zero
-description: "Protokol-Ø is an AI thriller story game told through cases: approve, reject or escalate. What my first game taught me about making games. Read the story."
+description: "Protokol-Ø is a dystopian story thriller told through cases: approve, reject or escalate. What my first game taught me about making games. Read the story."
 date: 2026-10-16
 order: 3
 cover: img/protokol-0.jpg
-keywords: AI thriller story game, decision making story game, story choice game, moral choice game, text based thriller, story game ios, indie story game
+keywords: story thriller game, dystopian mystery game, decision making story game, story choice game, moral choice game, text based thriller, story game ios, indie story game
 cta_label: Play Protokol-Ø on the App Store
 cta_url: https://apps.apple.com/app/apple-store/id6761679315?pt=128529947&ct=blog&mt=8
 ---
 
-After Unutma, I wanted to try something I had never done: make a game. Not a big one. Something I could actually finish, with a story I cared about. That became PROTOKOL-Ø, my first game experiment: an AI thriller story game.
+After Unutma, I wanted to try something I had never done: make a game. Not a big one. Something I could actually finish, with a story I cared about. That became PROTOKOL-Ø, my first game experiment: a dystopian story thriller.
 
 ## The idea
 
-I've always been drawn to thrillers about systems: a bureaucracy, a protocol, a machine that quietly decides things about people. I wanted a game where you sit *inside* one of those systems and feel the weight of each small decision.
+I've always been drawn to thrillers about systems: a bureaucracy, a protocol, an office that quietly decides things about people. I wanted a game where you sit *inside* one of those systems and feel the weight of each small decision.
 
-So Protokol-Ø is an AI thriller told through cases. A case lands in front of you. You read it. Then you make a call: **approve**, **reject** or **escalate**. Then the next one comes. The story moves forward through what you decide, and your decisions matter — not in a "pick the red or blue ending" way, but in the slower way a pattern of choices starts to say something about you.
+So Protokol-Ø is a dystopian thriller told through cases. A case lands in front of you. You read it. Then you make a call: **approve**, **reject** or **escalate**. Then the next one comes. The story moves forward through what you decide, and your decisions matter — not in a "pick the red or blue ending" way, but in the slower way a pattern of choices starts to say something about you.
 
 I won't say more about the plot. It's a thriller; the less you know going in, the better.
 

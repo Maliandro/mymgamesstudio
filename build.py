@@ -59,9 +59,9 @@ GAMES = [
          legal=[("Privacy", "https://maliandro.github.io/neo/en/privacy.html"),
                 ("Terms", "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"),
                 ("Support", "https://maliandro.github.io/neo/en/support.html")]),
-    dict(name="Protokol-Ø: AI Thriller Story", icon="img/protokol-0.jpg", keys=["protokol", "protocol"],
-         alt="Protokol-Ø AI thriller story game icon",
-         text="An AI thriller told through cases: approve, reject, escalate, and find out who your decisions reach.",
+    dict(name="PROTOKOL-Ø: Story Thriller", icon="img/protokol-0.jpg", keys=["protokol", "protocol"],
+         alt="Protokol-Ø dystopian story thriller game icon",
+         text="A dystopian thriller told through cases: approve, reject, escalate, and find out who your decisions reach.",
          store="https://apps.apple.com/app/apple-store/id6761679315?pt=128529947&ct=site&mt=8",
          legal=[("Privacy", "https://sites.google.com/view/protokolzero/privacy-policy"),
                 ("Terms", "https://sites.google.com/view/protokolzero/terms-of-service"),
@@ -517,7 +517,7 @@ def build_home(posts, blog_posts):
     <p>Hi, I'm Mehmet Ali, the developer behind {BRAND}. My journey started with <strong>Unutma</strong>, a private personal assistant app I built because I kept forgetting things. Building it taught me how to make apps; publishing taught me everything else.</p>
     <ol class="timeline">
       <li><span class="when">Feb 2026</span><span class="what"><strong>Unutma</strong> — the app that started it all</span></li>
-      <li><span class="when">Apr 2026</span><span class="what"><strong>Protokol-Ø</strong> — my first game, an AI thriller story</span></li>
+      <li><span class="when">Apr 2026</span><span class="what"><strong>Protokol-Ø</strong> — my first game, a dystopian story thriller</span></li>
       <li><span class="when">Jul 2026</span><span class="what"><strong>NEO</strong> — an interactive horror story where the wrong door kills you</span></li>
       <li><span class="when">Jul 2026</span><span class="what"><strong>Mobies</strong> — a customer book for small businesses</span></li>
       <li><span class="when">Sep 2026</span><span class="what"><strong>Foot Tennis Stars</strong> and <strong>Bolt &amp; Breath</strong></span></li>
