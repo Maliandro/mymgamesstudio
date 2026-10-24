@@ -85,7 +85,7 @@ GAMES = [
 APPS = [
     dict(name="Unutma", icon="img/unutma.jpg", keys=["unutma"],
          alt="Unutma offline personal assistant app icon", platforms="iOS, Android",
-         play="https://play.google.com/store/apps/details?id=com.mehmet.unutma",
+         play="https://play.google.com/store/apps/details?id=com.mehmet.unutma&referrer=utm_source%3Dmeyade-site%26utm_medium%3Dsite",
          text="A private personal assistant that works offline: say it, and it keeps your reminders, notes and expenses.",
          store="https://apps.apple.com/app/apple-store/id6758889495?pt=128529947&ct=site&mt=8",
          legal=[("Website", "https://unutma-blog.vercel.app/"), ("Privacy", "https://unutma-blog.vercel.app/privacy"),
@@ -297,6 +297,7 @@ def jsonld(obj):
     # yapısal veride kanonik App Store adresi; kampanya (pt/ct) yalnız tıklanan düğmelerde
     metin = re.sub(r"https://apps\.apple\.com/app/apple-store/id(\d+)\?pt=\d+&ct=[\w-]+&mt=8",
                    r"https://apps.apple.com/app/id\1", json.dumps(obj, ensure_ascii=False))
+    metin = re.sub(r"(play\.google\.com/store/apps/details\?id=[\w.]+)&referrer=[^\"]*", r"\1", metin)
     return '<script type="application/ld+json">' + metin.replace("</", "<\\/") + "</script>"
 
 
