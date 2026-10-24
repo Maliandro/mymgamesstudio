@@ -318,6 +318,10 @@ SCRIPT = """<script>
     if(navigator.clipboard){navigator.clipboard.writeText(b.dataset.copy).then(done,function(){prompt('Copy this link:',b.dataset.copy)});}
     else{prompt('Copy this link:',b.dataset.copy);}
   });});
+  // ?k=ig / ?k=yt: bio'dan gelen ziyaretçinin App Store düğmeleri o kanalın ct koduyla açılır (sayım Apple'da; burada veri tutulmaz)
+  var KANAL={ig:'ig-bio',yt:'yt-bio'},k=null;
+  try{k=new URLSearchParams(location.search).get('k')||sessionStorage.getItem('k');if(KANAL[k])sessionStorage.setItem('k',k);}catch(_){}
+  if(KANAL[k])document.querySelectorAll('a[href*="apps.apple.com/app/apple-store/"]').forEach(function(a){a.href=a.href.replace(/ct=[\\w-]+/,'ct='+KANAL[k]);});
 })();
 </script>"""
 
