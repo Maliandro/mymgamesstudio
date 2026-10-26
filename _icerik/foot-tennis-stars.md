@@ -9,6 +9,8 @@ cover: img/foot-tennis-stars.jpg
 keywords: foot tennis game, football tennis game, football volleyball game, footvolley game, online sports game, offline sports game, indie sports game
 cta_label: Play Foot Tennis Stars on the App Store
 cta_url: https://apps.apple.com/app/apple-store/id6804052429?pt=128529947&ct=blog&mt=8
+cta2_label: Get it on Google Play
+cta2_url: https://play.google.com/store/apps/details?id=com.maliandro.ayaktenisi&referrer=utm_source%3Dmeyade-blog%26utm_medium%3Dblog
 ---
 
 Foot tennis is a sport I've loved for a long time: a net, a ball, and the rule that you can't use your hands. Football meets volleyball. It's played seriously and competitively in many countries, under many different names, and I'd never seen a mobile game that treated it with much care. So I made one: a foot tennis game called Foot Tennis Stars.

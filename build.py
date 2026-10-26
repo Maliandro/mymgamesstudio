@@ -39,9 +39,10 @@ DEV_STORE = "https://apps.apple.com/us/developer/mehmet-ali-dengis/id1875549780"
 # keys: words that, found in a post slug, link that post to the game card.
 GAMES = [
     dict(name="Foot Tennis Stars", icon="img/foot-tennis-stars.jpg", keys=["foot-tennis"],
-         alt="Foot Tennis Stars foot tennis game icon", badge="Android coming soon",
-         text="Football meets volleyball: real foot tennis rules, smash shots over the net and online matches.",
+         alt="Foot Tennis Stars foot tennis game icon", platforms="iOS, Android",
+         text="Football meets volleyball: real foot tennis rules, smash shots over the net and online matches where iPhone and Android players meet.",
          store="https://apps.apple.com/app/apple-store/id6804052429?pt=128529947&ct=site&mt=8",
+         play="https://play.google.com/store/apps/details?id=com.maliandro.ayaktenisi&referrer=utm_source%3Dmeyade-site%26utm_medium%3Dsite",
          legal=[("Privacy", "https://maliandro.github.io/futnet-stars/privacy.html"),
                 ("Terms", "https://maliandro.github.io/futnet-stars/terms.html"),
                 ("Support", "https://maliandro.github.io/futnet-stars/support.html")]),
@@ -523,9 +524,10 @@ def build_home(posts, blog_posts):
       <li><span class="when">Jul 2026</span><span class="what"><strong>Mobies</strong> — a customer book for small businesses</span></li>
       <li><span class="when">Sep 2026</span><span class="what"><strong>Foot Tennis Stars</strong> and <strong>Bolt &amp; Breath</strong></span></li>
       <li><span class="when">Oct 2026</span><span class="what"><strong>Tomb Maze</strong> and <strong>Prof. Nano</strong>, both out on the same day</span></li>
-      <li><span class="when">Next</span><span class="what"><strong>Prof. Nano</strong> in English, and Android</span></li>
+      <li><span class="when">Oct 2026</span><span class="what"><strong>Foot Tennis Stars 2.0</strong> on iPhone and Android, playing together online</span></li>
+      <li><span class="when">Next</span><span class="what">More of my games on Android</span></li>
     </ol>
-    <p>Every day I post a short clip: gameplay, behind the scenes and what I'm building next. Most of my games are free on the App Store.</p>
+    <p>Every day I post a short clip: gameplay, behind the scenes and what I'm building next. Most of my games are free on the App Store, and Foot Tennis Stars is on Google Play too.</p>
   </section>
 
   <section id="games" class="wrap section" aria-labelledby="games-h">
