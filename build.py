@@ -10,6 +10,7 @@ import datetime as dt
 import html
 import json
 import math
+import os
 import re
 import shutil
 import sys
@@ -23,7 +24,9 @@ except ImportError:
 
 ROOT = Path(__file__).resolve().parent
 CONTENT = ROOT / "_icerik"
-SITE = "https://meyadegamesstudio.vercel.app"
+# Single place for the site address. When the .com domain is bought: set SITE_URL (env var) or change the default, run build.py, then
+#   python indexnow.py (reads the same address) and update app-ads.txt / Search Console. No trailing slash.
+SITE = os.environ.get("SITE_URL", "https://meyadegamesstudio.vercel.app").rstrip("/")
 BRAND = "MEYADE GAMES STUDIO"
 AUTHOR = "Mehmet Ali D."
 LOGO = "/img/logo.png"
@@ -44,6 +47,7 @@ DEV_STORE = "https://apps.apple.com/us/developer/mehmet-ali-dengis/id1875549780"
 GAMES = [
     dict(name="Foot Tennis Stars", icon="img/foot-tennis-stars.jpg", keys=["foot-tennis"],
          alt="Foot Tennis Stars foot tennis game icon", platforms="iOS, Android",
+         extra=[("Partners", "/foot-tennis-stars/partners/")],
          text="Football meets volleyball: real foot tennis rules, smash shots over the net and online matches where iPhone and Android players meet.",
          store="https://apps.apple.com/app/apple-store/id6804052429?pt=128529947&ct=site&mt=8",
          play="https://play.google.com/store/apps/details?id=com.maliandro.ayaktenisi&referrer=utm_source%3Dmeyade-site%26utm_medium%3Dsite",
@@ -80,6 +84,7 @@ GAMES = [
                 ("Support", "https://maliandro.github.io/tomb-maze-site/support.html")]),
     dict(name="Prof. Nano", icon="img/prof-nano.jpg", keys=["prof-nano", "nano"],
          alt="Prof. Nano science game for kids icon",
+         extra=[("For schools", "/for-schools/")],
          text="A game that sparks kids' curiosity about science.", note="Turkish and English · Android coming soon",
          store="https://apps.apple.com/app/apple-store/id6800853916?pt=128529947&ct=site&mt=8", site="https://maliandro.github.io/profnano-site/",
          legal=[("Website", "https://maliandro.github.io/profnano-site/"),
@@ -445,6 +450,8 @@ def item_card(item, posts, size):
     if item.get("badge"):
         store += f'<span class="store soon">{e(item["badge"])}</span>'
     story_link = f'<a class="story" href="{url_of(story)}">Read the story</a>' if story else ""
+    if item.get("extra"):
+        story_link += "".join(f'<a class="story" href="{h}">{t}</a>' for t, h in item["extra"])
     note = f'<p class="note">{e(item["note"])}</p>' if item.get("note") else ""
     legal = "".join(f'<a href="{u}"{lang}>{n}</a>' for n, u in item["legal"])
     return f"""<li class="card reveal">
@@ -476,7 +483,7 @@ def build_home(posts, blog_posts):
     items = []
     for i, g in enumerate(GAMES + APPS, 1):
         is_game = g in GAMES
-        obj = {"@type": ["VideoGame", "MobileApplication"] if is_game else "MobileApplication",
+        obj = {"@type": ["VideoGame", "MobileApplication", "SoftwareApplication"] if is_game else ["MobileApplication", "SoftwareApplication"],
                "name": g["name"], "operatingSystem": g.get("platforms", "iOS"),
                "applicationCategory": "GameApplication" if is_game else "UtilitiesApplication",
                "image": SITE + "/" + g["icon"], "description": g["text"], "author": {"@id": SITE + "/#org"}}
@@ -750,9 +757,17 @@ def build_feed(blog_posts):
 def build_sitemap(all_posts, blog_posts, extra=()):
     last = max([p["modified"] for p in blog_posts], default=TODAY)
     urls = [("/", last), ("/blog/", last)] + [(url_of(p), p["modified"]) for p in all_posts] + [(u, TODAY) for u in extra]
-    body = "\n".join(f"  <url><loc>{SITE}{u}</loc><lastmod>{d.isoformat()}</lastmod></url>" for u, d in urls)
+    pairs = {"/for-schools/": "/tr/okullar/", "/tr/okullar/": "/for-schools/",
+             "/foot-tennis-stars/partners/": "/tr/ayak-tenisi/", "/tr/ayak-tenisi/": "/foot-tennis-stars/partners/"}
+    def alt(u):
+        if u not in pairs:
+            return ""
+        en, tr = (u, pairs[u]) if not u.startswith("/tr/") else (pairs[u], u)
+        return (f'<xhtml:link rel="alternate" hreflang="en" href="{SITE}{en}"/>'
+                f'<xhtml:link rel="alternate" hreflang="tr" href="{SITE}{tr}"/>')
+    body = "\n".join(f"  <url><loc>{SITE}{u}</loc><lastmod>{d.isoformat()}</lastmod>{alt(u)}</url>" for u, d in urls)
     write("sitemap.xml", f'<?xml version="1.0" encoding="UTF-8"?>\n'
-                         f'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{body}\n</urlset>\n')
+                         f'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n{body}\n</urlset>\n')
     write("robots.txt", f"User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n")
     return [u for u, _ in urls]
 

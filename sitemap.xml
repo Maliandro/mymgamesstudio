@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url><loc>https://meyadegamesstudio.vercel.app/</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://meyadegamesstudio.vercel.app/blog/</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://meyadegamesstudio.vercel.app/blog/unutma/</loc><lastmod>2026-10-16</lastmod></url>
@@ -14,8 +14,8 @@
   <url><loc>https://meyadegamesstudio.vercel.app/blog/foot-tennis-stars-2-0/</loc><lastmod>2026-10-23</lastmod></url>
   <url><loc>https://meyadegamesstudio.vercel.app/blog/foot-tennis-stars-android/</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://meyadegamesstudio.vercel.app/about/</loc><lastmod>2026-10-16</lastmod></url>
-  <url><loc>https://meyadegamesstudio.vercel.app/for-schools/</loc><lastmod>2026-11-08</lastmod></url>
-  <url><loc>https://meyadegamesstudio.vercel.app/tr/okullar/</loc><lastmod>2026-11-08</lastmod></url>
-  <url><loc>https://meyadegamesstudio.vercel.app/foot-tennis-stars/partners/</loc><lastmod>2026-11-08</lastmod></url>
-  <url><loc>https://meyadegamesstudio.vercel.app/tr/ayak-tenisi/</loc><lastmod>2026-11-08</lastmod></url>
+  <url><loc>https://meyadegamesstudio.vercel.app/for-schools/</loc><lastmod>2026-11-08</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://meyadegamesstudio.vercel.app/for-schools/"/><xhtml:link rel="alternate" hreflang="tr" href="https://meyadegamesstudio.vercel.app/tr/okullar/"/></url>
+  <url><loc>https://meyadegamesstudio.vercel.app/tr/okullar/</loc><lastmod>2026-11-08</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://meyadegamesstudio.vercel.app/for-schools/"/><xhtml:link rel="alternate" hreflang="tr" href="https://meyadegamesstudio.vercel.app/tr/okullar/"/></url>
+  <url><loc>https://meyadegamesstudio.vercel.app/foot-tennis-stars/partners/</loc><lastmod>2026-11-08</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://meyadegamesstudio.vercel.app/foot-tennis-stars/partners/"/><xhtml:link rel="alternate" hreflang="tr" href="https://meyadegamesstudio.vercel.app/tr/ayak-tenisi/"/></url>
+  <url><loc>https://meyadegamesstudio.vercel.app/tr/ayak-tenisi/</loc><lastmod>2026-11-08</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://meyadegamesstudio.vercel.app/foot-tennis-stars/partners/"/><xhtml:link rel="alternate" hreflang="tr" href="https://meyadegamesstudio.vercel.app/tr/ayak-tenisi/"/></url>
 </urlset>

@@ -2,11 +2,11 @@
     python indexnow.py
 """
 import glob, json, os, re, urllib.request
-SITE = "https://meyadegamesstudio.vercel.app"
+SITE = os.environ.get("SITE_URL", "https://meyadegamesstudio.vercel.app").rstrip("/")  # build.py ile aynı değişken
 KOK = os.path.dirname(os.path.abspath(__file__))
 key = [os.path.basename(f)[:-4] for f in glob.glob(os.path.join(KOK, "*.txt")) if re.fullmatch(r"[0-9a-f]{32}\.txt", os.path.basename(f))][0]
 urls = re.findall(r"<loc>(.*?)</loc>", open(os.path.join(KOK, "sitemap.xml"), encoding="utf-8").read())
-body = json.dumps({"host": "meyadegamesstudio.vercel.app", "key": key, "keyLocation": f"{SITE}/{key}.txt", "urlList": urls}).encode()
+body = json.dumps({"host": SITE.split("//")[1], "key": key, "keyLocation": f"{SITE}/{key}.txt", "urlList": urls}).encode()
 req = urllib.request.Request("https://api.indexnow.org/indexnow", data=body, headers={"Content-Type": "application/json; charset=utf-8"})
 try:
     r = urllib.request.urlopen(req, timeout=30); print("IndexNow:", r.status, len(urls), "adres")
