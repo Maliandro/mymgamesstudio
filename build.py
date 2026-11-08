@@ -40,7 +40,7 @@ SOCIAL = [
     ("itch.io", "https://meyadegames.itch.io"),
 ]
 # TODO S1: decision not made yet. When the studio e-mail address exists, change CONTACT here and rebuild.
-CONTACT = "mealidengis@gmail.com"
+CONTACT = "meyadegamesstudio@gmail.com"
 DEV_STORE = "https://apps.apple.com/us/developer/mehmet-ali-dengis/id1875549780"
 
 # keys: words that, found in a post slug, link that post to the game card.
