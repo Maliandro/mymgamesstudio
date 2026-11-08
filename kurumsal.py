@@ -162,7 +162,7 @@ def build_pages(ctx):
   <section class="org-sec" aria-labelledby="board-h">
     <h2 id="board-h">Stadium boards for sponsors</h2>
     <p>Every arena has advertising boards along the side and back of the pitch, the way a real match does. They are seen in every rally, every replay and in the Nations Cup final. A brand, a club or an event can have its own board in the game, together with a venue or cup name.</p>
-    <p>We are starting with a <strong>free three-month pilot board</strong> for the first partners, so that both sides can see how it feels before talking about anything else. We do not publish prices on this page. Tell us what you have in mind and we will reply with a clear proposal.</p>
+    <p>Partnership options are flexible: stadium boards, a named cup or a special in-game event. <strong>Get in touch and tell us what you have in mind</strong>; we will reply with a clear proposal that fits your goals. We do not publish prices on this page.</p>
     <p>We do not count impressions inside the game. Any figure we give you about reach would be an estimate, and we will say so.</p>
   </section>
   <section class="org-sec" aria-labelledby="contact-h">
@@ -204,7 +204,7 @@ def build_pages(ctx):
   <section class="org-sec" aria-labelledby="board-h">
     <h2 id="board-h">Sponsorlar için stadyum panoları</h2>
     <p>Her sahada, gerçek bir maçtaki gibi, sahanın yanında ve arkasında reklam panoları var. Her ralide, her tekrarda ve Nations Cup finalinde görünürler. Bir marka, kulüp ya da etkinlik, oyunda kendi panosuna ve isterse bir saha ya da kupa adına sahip olabilir.</p>
-    <p>İlk ortaklar için <strong>ücretsiz üç aylık deneme panosu</strong> ile başlıyoruz; ikimiz de nasıl durduğunu görmeden başka bir şey konuşmayalım. Bu sayfada fiyat yayımlamıyoruz. Aklınızdaki fikri yazın, size net bir teklifle dönelim.</p>
+    <p>Ortaklık seçenekleri esnek: stadyum panoları, adınızı taşıyan bir kupa ya da oyun içi özel bir etkinlik. <strong>Bizimle iletişime geçin, aklınızdaki fikri yazın</strong>; hedeflerinize uyan net bir teklifle dönelim. Bu sayfada fiyat yayımlamıyoruz.</p>
     <p>Oyun içinde gösterim saymıyoruz. Erişim hakkında verdiğimiz her rakam bir tahmin olur ve öyle söyleriz.</p>
   </section>
   <section class="org-sec" aria-labelledby="contact-h">
