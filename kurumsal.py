@@ -156,7 +156,7 @@ def build_pages(ctx):
   </section>
   <section class="org-sec" aria-labelledby="fed-h">
     <h2 id="fed-h">Federation</h2>
-    <p>The game is made with respect for the sport. The name and emblem of the Turkish Foot Tennis Federation already appear inside the game. We would like to work with the federation and with clubs, leagues and events: a shared announcement, an official event or cup name inside the game, or a QR poster for a hall or a broadcast. We ask for nothing in return, and we only use a name or an emblem with written permission.</p>
+    <p>The game is made with respect for the sport. We would like to work with the federation and with clubs, leagues and events: a shared announcement, an official event or cup name inside the game, or a QR poster for a hall or a broadcast. We ask for nothing in return, and we only use a name or an emblem with written permission.</p>
     <!-- Reviewer note: no emblem image is used on this page on purpose. Written permission is needed before the federation's emblem appears in sponsor material. -->
   </section>
   <section class="org-sec" aria-labelledby="board-h">
@@ -198,7 +198,7 @@ def build_pages(ctx):
   </section>
   <section class="org-sec" aria-labelledby="fed-h">
     <h2 id="fed-h">Federasyon</h2>
-    <p>Oyun, spora saygıyla yapıldı. Türkiye Ayak Tenisi Federasyonu'nun adı ve amblemi oyunun içinde zaten yer alıyor. Federasyonla, kulüplerle, liglerle ve etkinliklerle çalışmak isteriz: ortak duyuru, oyun içinde resmî bir etkinlik ya da kupa adı, salon ya da yayın için QR afişi. Karşılığında bir bedel beklemiyoruz; bir ad ya da amblemi yalnızca yazılı izinle kullanırız.</p>
+    <p>Oyun, spora saygıyla yapıldı. Federasyonla, kulüplerle, liglerle ve etkinliklerle çalışmak isteriz: ortak duyuru, oyun içinde resmî bir etkinlik ya da kupa adı, salon ya da yayın için QR afişi. Karşılığında bir bedel beklemiyoruz; bir ad ya da amblemi yalnızca yazılı izinle kullanırız.</p>
     <!-- Not: federasyon amblemi için yazılı izin gelene kadar bu sayfada amblem görseli bilerek kullanılmadı. -->
   </section>
   <section class="org-sec" aria-labelledby="board-h">
