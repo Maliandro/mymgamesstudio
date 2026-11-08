@@ -74,7 +74,7 @@ def build_pages(ctx):
   </section>
   <section class="org-sec" aria-labelledby="inst-h">
     <h2 id="inst-h">For institutions and educators</h2>
-    <p>Teachers, school librarians, public libraries and home-education groups are welcome to review Prof. Nano before deciding anything. <strong>Write to us and we will send free Full Version review codes on request.</strong> Please tell us who you are and where you teach or work, so we can send the right number of codes.</p>
+    <p>Teachers, school librarians, public libraries and home-education groups are welcome to review Prof. Nano before deciding anything. <strong>Teachers, librarians and education reviewers can ask for a limited review code.</strong> We read each request; please write from your school or institution address and tell us where you teach or work. Review codes are for evaluating the game, not for classroom-wide use.</p>
     <p>We do not offer bulk licences at this time. If that changes, this page will say so.</p>
     <p class="btn-row"><a class="btn primary" href="{e(m_en)}">Request a review code</a></p>
     <p class="note-line">Or write to <a href="mailto:{C}">{C}</a>. This page has no forms and no analytics, and sets no cookies.</p>
@@ -85,10 +85,10 @@ def build_pages(ctx):
   </section>"""
     write("for-schools/index.html", page(
         path="/for-schools/", title="Prof. Nano for Schools and Home Education",
-        desc="Prof. Nano: offline science game for ages 7 to 10. 48 hands-on mini games, no ads, no data collection. Free review codes for schools and libraries.",
+        desc="Prof. Nano: offline science game for ages 7 to 10. 48 hands-on mini games, no ads, no data collection. Limited review codes for educators.",
         body=shell("en", "/img/prof-nano.jpg", "Prof. Nano science game icon",
                    "Prof. Nano for schools, libraries and home education",
-                   "A calm, offline science game for ages 7 to 10. No ads, no data collection. Review it free.",
+                   "A calm, offline science game for ages 7 to 10. No ads, no data collection. Free first region.",
                    sec_en, ("Türkçe sürüm", "/tr/okullar/")),
         active="", image="/img/prof-nano.jpg",
         ld=webpage("Prof. Nano for schools, libraries and home education", "/for-schools/", "en"),
@@ -117,7 +117,7 @@ def build_pages(ctx):
   </section>
   <section class="org-sec" aria-labelledby="inst-h">
     <h2 id="inst-h">Kurumlar ve eğitimciler için</h2>
-    <p>Öğretmenler, okul kütüphaneleri, halk kütüphaneleri ve evde eğitim grupları, karar vermeden önce Prof. Nano'yu inceleyebilir. <strong>Bize yazın, istek üzerine ücretsiz Tam Sürüm inceleme kodu gönderelim.</strong> Kim olduğunuzu ve nerede görev yaptığınızı yazmanız, doğru sayıda kod göndermemize yardımcı olur.</p>
+    <p>Öğretmenler, okul kütüphaneleri, halk kütüphaneleri ve evde eğitim grupları, karar vermeden önce Prof. Nano'yu inceleyebilir. <strong>Öğretmenler, kütüphaneciler ve eğitim içeriği değerlendirenler sınırlı sayıda inceleme kodu isteyebilir.</strong> Her isteği tek tek değerlendiriyoruz; lütfen okulunuzun ya da kurumunuzun adresinden yazın ve nerede görev yaptığınızı belirtin. İnceleme kodları oyunu değerlendirmek içindir, sınıf çapında kullanım için değildir.</p>
     <p>Şu an toplu lisans sunmuyoruz. Bu değişirse bu sayfada yazar.</p>
     <p class="btn-row"><a class="btn primary" href="{e(m_tr)}">İnceleme kodu iste</a></p>
     <p class="note-line">Ya da doğrudan <a href="mailto:{C}">{C}</a> adresine yazın. Bu sayfada form, analiz aracı ve çerez yoktur.</p>
@@ -128,7 +128,7 @@ def build_pages(ctx):
   </section>"""
     write("tr/okullar/index.html", page(
         path="/tr/okullar/", title="Okullar İçin Prof. Nano: Çocuk Bilim Oyunu",
-        desc="Prof. Nano: 7-10 yaş için çevrimdışı bilim oyunu. 48 uygulamalı küçük oyun, reklam yok, veri toplanmaz. Okullara ve kütüphanelere ücretsiz inceleme kodu.",
+        desc="Prof. Nano: 7-10 yaş için çevrimdışı bilim oyunu. 48 uygulamalı küçük oyun, reklam yok, veri toplanmaz. Eğitimcilere sınırlı inceleme kodu.",
         body=shell("tr", "/img/prof-nano.jpg", "Prof. Nano bilim oyunu simgesi",
                    "Okullar, kütüphaneler ve evde eğitim için Prof. Nano",
                    "7-10 yaş için sakin, çevrimdışı bir bilim oyunu. Reklam yok, veri toplanmaz. Ücretsiz inceleyin.",
