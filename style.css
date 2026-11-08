@@ -254,3 +254,21 @@ svg.post-cover { box-shadow: none; }
 }
 .related { margin: 24px 0 0; color: var(--muted); font-size: .95rem; }
 .related span { font-weight: 700; margin-right: 4px; }
+
+/* ---------- institution pages (schools, partners) ---------- */
+.org { max-width: 760px; }
+.org-head { text-align: left; }
+.org-icon { width: 96px; height: 96px; border-radius: 22px; box-shadow: 0 12px 32px rgba(0, 0, 0, .45); margin-bottom: 14px; }
+.langswitch { margin: 14px 0 0; font-weight: 700; }
+.org-sec { margin: 0 0 34px; }
+.org-sec p { color: var(--soft); max-width: 68ch; }
+.facts { list-style: none; margin: 18px 0; padding: 0; display: grid; grid-template-columns: 1fr; gap: 10px; }
+.facts li { display: flex; flex-direction: column; gap: 2px; padding: 12px 14px; background: var(--card); border: 1px solid var(--line); border-radius: 14px; }
+.facts strong { color: var(--text); }
+.facts span { color: var(--muted); font-size: .92rem; }
+.btn-row { display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0 8px; }
+.note-line { color: var(--muted); font-size: .92rem; overflow-wrap: anywhere; }
+#partners .card .body { width: 100%; }
+@media (min-width: 560px) {
+  .facts { grid-template-columns: 1fr 1fr; }
+}

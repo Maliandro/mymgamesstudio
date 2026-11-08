@@ -32,8 +32,12 @@ TODAY = dt.date.today()
 SOCIAL = [
     ("YouTube", "https://www.youtube.com/channel/UCr0haylnBMX4Pmm43VYPXzw"),
     ("Instagram", "https://instagram.com/meyade.gamesstudio"),
-    ("Facebook", "https://www.facebook.com/meyade.gamesstudio"),
+    # Facebook page is locked until ~15 Dec 2026: link hidden on purpose (S6). Add back: ("Facebook", "https://www.facebook.com/meyade.gamesstudio"),
+    ("X", "https://x.com/MeyadeGame"),
+    ("itch.io", "https://meyadegames.itch.io"),
 ]
+# TODO S1: decision not made yet. When the studio e-mail address exists, change CONTACT here and rebuild.
+CONTACT = "mealidengis@gmail.com"
 DEV_STORE = "https://apps.apple.com/us/developer/mehmet-ali-dengis/id1875549780"
 
 # keys: words that, found in a post slug, link that post to the game card.
@@ -76,7 +80,7 @@ GAMES = [
                 ("Support", "https://maliandro.github.io/tomb-maze-site/support.html")]),
     dict(name="Prof. Nano", icon="img/prof-nano.jpg", keys=["prof-nano", "nano"],
          alt="Prof. Nano science game for kids icon",
-         text="A game that sparks kids' curiosity about science.", note="Turkish now · English coming soon",
+         text="A game that sparks kids' curiosity about science.", note="Turkish and English · Android coming soon",
          store="https://apps.apple.com/app/apple-store/id6800853916?pt=128529947&ct=site&mt=8", site="https://maliandro.github.io/profnano-site/",
          legal=[("Website", "https://maliandro.github.io/profnano-site/"),
                 ("Privacy", "https://maliandro.github.io/profnano-site/privacy.html"),
@@ -329,17 +333,20 @@ SCRIPT = """<script>
 
 
 def page(*, path, title, desc, body, active, image=None, og_type="website", ld=(), head_extra="",
-         robots="index, follow, max-image-preview:large"):
+         robots="index, follow, max-image-preview:large", lang="en"):
     canonical = SITE + path
     img = image or LOGO
     img_abs = img if img.startswith("http") else SITE + img
+    tr = lang == "tr"
     nav = "".join(
         f'<a href="{href}"{CUR if key == active else ""}>{label}</a>'
-        for key, href, label in [("home", "/", "Home"), ("games", "/#games", "Games"),
-                                 ("blog", "/blog/", "Blog"), ("about", ABOUT_HREF, "About")])
+        for key, href, label in [("home", "/", "Ana sayfa" if tr else "Home"), ("games", "/#games", "Oyunlar" if tr else "Games"),
+                                 ("blog", "/blog/", "Blog"), ("about", ABOUT_HREF, "Hakkında" if tr else "About")])
+    foot_extra = ('<a href="/tr/okullar/">Okullar</a><a href="/tr/ayak-tenisi/">Ayak Tenisi ortakları</a>' if tr
+                  else '<a href="/for-schools/">For schools</a><a href="/foot-tennis-stars/partners/">Partners</a>')
     lds = "\n".join(jsonld(x) for x in ld)
     return f"""<!doctype html>
-<html lang="en">
+<html lang="{lang}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -355,7 +362,7 @@ def page(*, path, title, desc, body, active, image=None, og_type="website", ld=(
 <meta property="og:description" content="{e(desc)}">
 <meta property="og:url" content="{canonical}">
 <meta property="og:image" content="{e(img_abs)}">
-<meta property="og:locale" content="en_US">
+<meta property="og:locale" content="{"tr_TR" if tr else "en_US"}">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="{e(title)}">
 <meta name="twitter:description" content="{e(desc)}">
@@ -368,7 +375,7 @@ def page(*, path, title, desc, body, active, image=None, og_type="website", ld=(
 {lds}
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
+<a class="skip" href="#main">{"İçeriğe geç" if tr else "Skip to content"}</a>
 <header class="topbar">
   <div class="wrap bar">
     <a class="brand" href="/" aria-label="{BRAND} home">{mark_svg("n", "mark mark-sm")}<span>{BRAND}</span></a>
@@ -378,7 +385,7 @@ def page(*, path, title, desc, body, active, image=None, og_type="website", ld=(
 {body}
 <footer class="site-foot">
   <div class="wrap">
-    <nav class="foot-links" aria-label="Footer"><a href="/">Home</a><a href="/blog/">Blog</a><a href="{ABOUT_HREF}">About</a><a href="/feed.xml">RSS</a>{"".join(f'<a href="{u}" target="_blank" rel="noopener">{n}</a>' for n, u in SOCIAL)}</nav>
+    <nav class="foot-links" aria-label="Footer"><a href="/">{"Ana sayfa" if tr else "Home"}</a><a href="/blog/">Blog</a><a href="{ABOUT_HREF}">{"Hakkında" if tr else "About"}</a>{foot_extra}<a href="/feed.xml">RSS</a>{"".join(f'<a href="{u}" target="_blank" rel="noopener">{n}</a>' for n, u in SOCIAL)}</nav>
     <p>© {TODAY.year} {e(AUTHOR)} · {BRAND}</p>
   </div>
 </footer>
@@ -504,7 +511,7 @@ def build_home(posts, blog_posts):
   <div class="wrap hero-in">
     {mark_svg("h", "mark mark-lg")}
     <h1>{BRAND}</h1>
-    <p class="lead">Indie games made by one developer in Turkey</p>
+    <p class="lead">Indie games and apps made in Turkey</p>
     <span class="arrow" aria-hidden="true"></span>
     <nav class="cta" aria-label="Quick links">
       <a class="btn primary" href="{DEV_STORE}" target="_blank" rel="noopener">All games on the App Store</a>
@@ -515,19 +522,20 @@ def build_home(posts, blog_posts):
 
 <main id="main">
   <section id="journey" class="wrap section reveal" aria-labelledby="journey-h">
-    <h2 id="journey-h">My journey</h2>
-    <p>Hi, I'm Mehmet Ali, the developer behind {BRAND}. My journey started with <strong>Unutma</strong>, a private personal assistant app I built because I kept forgetting things. Building it taught me how to make apps; publishing taught me everything else.</p>
+    <h2 id="journey-h">Our journey</h2>
+    <p>{BRAND} is a small independent studio in Turkey. Our journey started with <strong>Unutma</strong>, a private personal assistant app we built because we kept forgetting things. Building it taught us how to make apps; publishing taught us everything else.</p>
     <ol class="timeline">
       <li><span class="when">Feb 2026</span><span class="what"><strong>Unutma</strong> — the app that started it all</span></li>
-      <li><span class="when">Apr 2026</span><span class="what"><strong>Protokol-Ø</strong> — my first game, a dystopian story thriller</span></li>
+      <li><span class="when">Apr 2026</span><span class="what"><strong>Protokol-Ø</strong> — our first game, a dystopian story thriller</span></li>
       <li><span class="when">Jul 2026</span><span class="what"><strong>NEO</strong> — an interactive horror story where the wrong door kills you</span></li>
       <li><span class="when">Jul 2026</span><span class="what"><strong>Mobies</strong> — a customer book for small businesses</span></li>
       <li><span class="when">Sep 2026</span><span class="what"><strong>Foot Tennis Stars</strong> and <strong>Bolt &amp; Breath</strong></span></li>
       <li><span class="when">Oct 2026</span><span class="what"><strong>Tomb Maze</strong> and <strong>Prof. Nano</strong>, both out on the same day</span></li>
       <li><span class="when">Oct 2026</span><span class="what"><strong>Foot Tennis Stars 2.0</strong> on iPhone and Android, playing together online</span></li>
-      <li><span class="when">Next</span><span class="what">More of my games on Android</span></li>
+      <li><span class="when">Nov 2026</span><span class="what"><strong>Foot Tennis Stars 2.1</strong> and <strong>Bolt &amp; Breath 1.5.0</strong></span></li>
+      <li><span class="when">Next</span><span class="what">More of our games on Android, starting with Prof. Nano</span></li>
     </ol>
-    <p>Every day I post a short clip: gameplay, behind the scenes and what I'm building next. Most of my games are free on the App Store, and Foot Tennis Stars is on Google Play too.</p>
+    <p>We post short clips of gameplay and behind-the-scenes work. Most of our games are free on the App Store, and Foot Tennis Stars is on Google Play too.</p>
   </section>
 
   <section id="games" class="wrap section" aria-labelledby="games-h">
@@ -545,18 +553,27 @@ def build_home(posts, blog_posts):
   </section>
 {blog_section}
 
+  <section id="partners" class="wrap section reveal" aria-labelledby="partners-h">
+    <h2 id="partners-h">For schools, clubs and partners</h2>
+    <ul class="cards">
+      <li class="card"><div class="body"><h3>Prof. Nano for schools</h3><p>Offline science game for ages 7 to 10. Free review codes for schools, libraries and home education.</p><div class="actions"><a class="store" href="/for-schools/">For schools</a><a class="story" href="/tr/okullar/" hreflang="tr" lang="tr">Türkçe</a></div></div></li>
+      <li class="card"><div class="body"><h3>Foot Tennis Stars partners</h3><p>Federations, clubs, events and sponsors: work with us on cups and in-game stadium boards.</p><div class="actions"><a class="store" href="/foot-tennis-stars/partners/">Partners</a><a class="story" href="/tr/ayak-tenisi/" hreflang="tr" lang="tr">Türkçe</a></div></div></li>
+    </ul>
+  </section>
+
   <section id="follow" class="wrap section reveal" aria-labelledby="follow-h">
     <h2 id="follow-h">Follow the journey</h2>
-    <p>A new clip every day.</p>
+    <p>New clips, behind the scenes and updates.</p>
     <nav class="social" aria-label="Social links">
       {"".join(f'<a class="btn" href="{u}" target="_blank" rel="noopener">{n}</a>' for n, u in SOCIAL)}
       <a class="btn" href="{DEV_STORE}" target="_blank" rel="noopener">App Store</a>
     </nav>
-    <p class="contact">Contact: <a href="mailto:mealidengis@gmail.com">mealidengis@gmail.com</a></p>
+    <!-- TODO S1: studio e-mail address decision pending; set CONTACT in build.py -->
+    <p class="contact">Contact: <a href="mailto:{CONTACT}">{CONTACT}</a></p>
   </section>
 </main>"""
-    html_out = page(path="/", title=f"{BRAND} — Indie games by one developer in Turkey",
-                    desc=f"{BRAND}: indie mobile games and apps by one developer in Turkey. NEO, Bolt & Breath, Foot Tennis Stars, Protokol-Ø and the stories behind them.",
+    html_out = page(path="/", title=f"{BRAND} — Indie games and apps made in Turkey",
+                    desc=f"{BRAND}: indie mobile games and apps made in Turkey. NEO, Bolt & Breath, Foot Tennis Stars, Protokol-Ø and the stories behind them.",
                     body=body, active="home", ld=ld, head_extra=verify)
     write("index.html", html_out)
 
@@ -730,9 +747,9 @@ def build_feed(blog_posts):
 """)
 
 
-def build_sitemap(all_posts, blog_posts):
+def build_sitemap(all_posts, blog_posts, extra=()):
     last = max([p["modified"] for p in blog_posts], default=TODAY)
-    urls = [("/", last), ("/blog/", last)] + [(url_of(p), p["modified"]) for p in all_posts]
+    urls = [("/", last), ("/blog/", last)] + [(url_of(p), p["modified"]) for p in all_posts] + [(u, TODAY) for u in extra]
     body = "\n".join(f"  <url><loc>{SITE}{u}</loc><lastmod>{d.isoformat()}</lastmod></url>" for u, d in urls)
     write("sitemap.xml", f'<?xml version="1.0" encoding="UTF-8"?>\n'
                          f'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{body}\n</urlset>\n')
@@ -759,7 +776,9 @@ def main():
     build_post(about, None, None)
     build_404()
     build_feed(blog_posts)
-    urls = build_sitemap(blog_posts + [about], blog_posts)
+    import kurumsal
+    extra_urls = kurumsal.build_pages(dict(page=page, write=write, e=e, SITE=SITE, BRAND=BRAND, CONTACT=CONTACT))
+    urls = build_sitemap(blog_posts + [about], blog_posts, extra_urls)
     print(f"Built {len(blog_posts)} posts + about ({about['file']}) -> {len(urls)} URLs in sitemap")
     for p in blog_posts:
         print(f"  {url_of(p):45} {p['date']}  {p['minutes']} min  ({p['file']})")
