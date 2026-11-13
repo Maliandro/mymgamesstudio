@@ -272,3 +272,13 @@ svg.post-cover { box-shadow: none; }
 @media (min-width: 560px) {
   .facts { grid-template-columns: 1fr 1fr; }
 }
+
+/* game info pages (oyunlar.py) */
+.card h2.card-title { margin: 0 0 4px; font-size: 1.1rem; line-height: 1.3; }
+.card h2.card-title::after { display: none; }
+.card h2.card-title a { color: inherit; text-decoration: none; }
+.org-sec h3 { font-size: 1.1rem; margin: 1.4em 0 .35em; color: var(--text); }
+.org-sec ul { color: var(--soft); max-width: 68ch; padding-left: 1.2em; }
+.org-sec li { margin-bottom: .4em; }
+.org-sec ul.facts { padding-left: 0; max-width: none; }
+.game-page .crumb { margin: 0 0 8px; }

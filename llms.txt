@@ -1,0 +1,30 @@
+# MEYADE GAMES STUDIO
+
+> Independent mobile game studio in Turkey. The games below are on the App Store (iPhone and iPad); Foot Tennis Stars is also on Google Play. Each link is a plain-HTML page with the facts: what the game is, how it plays, price model, platforms and an FAQ.
+
+## Games
+
+- [Foot Tennis Stars](https://meyadegamesstudio.vercel.app/games/foot-tennis-stars/): Free foot tennis (football tennis) game for iPhone, iPad and Android: offline matches against computer rivals, or online where iPhone and Android players meet.
+- [Tomb Maze: Horror Escape](https://meyadegamesstudio.vercel.app/games/tomb-maze/): Free first-person horror maze escape game for iPhone and iPad: 20 labyrinths beneath a collapsed pyramid, creatures that see and hear you, works offline.
+- [Bolt & Breath: Last Dragon](https://meyadegamesstudio.vercel.app/games/bolt-and-breath/): Free dragon flight game for iPhone and iPad: fly the last dragon, burn the royal fleet, or switch sides and man the ballista. 57 missions, plays offline.
+- [NEO: Interactive Horror Story](https://meyadegamesstudio.vercel.app/games/neo/): Free interactive horror story (text-based, choice-driven) for iPhone and iPad: a missing friend, a clock frozen at 17:34, a time loop, 20 endings; the whole story is free.
+- [PROTOKOL-Ø: Story Thriller](https://meyadegamesstudio.vercel.app/games/protokol-zero/): Story thriller for iPhone and iPad: you're the AI, and nobody told you. Process files at AION Systems (approve, reject, escalate) and watch the record change. No ads; first modules free.
+- [Prof. Nano: Kids Science Games](https://meyadegamesstudio.vercel.app/games/prof-nano/): Hands-on science game for children aged 7 to 10 on iPhone and iPad: 48 mini games in 8 regions, read aloud, no ads, works offline, collects no data; first region free.
+
+## Guides
+
+- [How to Play Foot Tennis: Rules, Scoring and Tips](https://meyadegamesstudio.vercel.app/blog/how-to-play-foot-tennis/): the real sport's rules (court, net, serve, touches, bounces, scoring) with sources, and how Foot Tennis Stars adapts them.
+- [Ayak tenisi nasıl oynanır? Kurallar, sayı ve ipuçları](https://meyadegamesstudio.vercel.app/tr/ayak-tenisi-nasil-oynanir/): the same guide in Turkish.
+
+## Apps
+
+- Unutma: A private personal assistant that works offline: say it, and it keeps your reminders, notes and expenses. App Store: https://apps.apple.com/app/id6758889495
+- Mobies: A customer book for small businesses: know your regulars, with no account and your data on your phone. App Store: https://apps.apple.com/app/id6766030370
+
+## More
+
+- [All games](https://meyadegamesstudio.vercel.app/games/)
+- [Blog](https://meyadegamesstudio.vercel.app/blog/): development stories behind each game
+- [Prof. Nano for schools](https://meyadegamesstudio.vercel.app/for-schools/)
+- [Foot Tennis Stars partners](https://meyadegamesstudio.vercel.app/foot-tennis-stars/partners/)
+- Contact: meyadegamesstudio@gmail.com

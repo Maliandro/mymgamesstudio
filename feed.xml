@@ -7,7 +7,7 @@
   <atom:link href="https://meyadegamesstudio.vercel.app/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Stories behind the indie games of MEYADE GAMES STUDIO.</description>
   <language>en</language>
-  <lastBuildDate>Mon, 26 Oct 2026 09:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 13 Nov 2026 09:00:00 +0000</lastBuildDate>
   <item>
     <title>Unutma: My First Experiment, an Offline Personal Assistant</title>
     <link>https://meyadegamesstudio.vercel.app/blog/unutma/</link>
@@ -84,6 +84,13 @@
     <guid isPermaLink="true">https://meyadegamesstudio.vercel.app/blog/foot-tennis-stars-android/</guid>
     <pubDate>Mon, 26 Oct 2026 09:00:00 +0000</pubDate>
     <description>Foot Tennis Stars 2.0 is out on Google Play. Android and iPhone players meet in the same online match, with nine new arenas and the Nations Cup. Here&#x27;s how the launch went.</description>
+  </item>
+  <item>
+    <title>How to Play Foot Tennis: Rules, Scoring and Tips</title>
+    <link>https://meyadegamesstudio.vercel.app/blog/how-to-play-foot-tennis/</link>
+    <guid isPermaLink="true">https://meyadegamesstudio.vercel.app/blog/how-to-play-foot-tennis/</guid>
+    <pubDate>Fri, 13 Nov 2026 09:00:00 +0000</pubDate>
+    <description>Foot tennis rules explained: court, net height, serve, touches, bounces and scoring, with sources. Plus beginner tips and how Foot Tennis Stars adapts the sport.</description>
   </item>
 </channel>
 </rss>

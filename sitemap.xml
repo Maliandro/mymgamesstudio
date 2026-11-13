@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url><loc>https://meyadegamesstudio.vercel.app/</loc><lastmod>2026-10-26</lastmod></url>
-  <url><loc>https://meyadegamesstudio.vercel.app/blog/</loc><lastmod>2026-10-26</lastmod></url>
+  <url><loc>https://meyadegamesstudio.vercel.app/</loc><lastmod>2026-11-13</lastmod></url>
+  <url><loc>https://meyadegamesstudio.vercel.app/blog/</loc><lastmod>2026-11-13</lastmod></url>
   <url><loc>https://meyadegamesstudio.vercel.app/blog/unutma/</loc><lastmod>2026-10-16</lastmod></url>
   <url><loc>https://meyadegamesstudio.vercel.app/blog/protokol-zero/</loc><lastmod>2026-10-16</lastmod></url>
   <url><loc>https://meyadegamesstudio.vercel.app/blog/neo/</loc><lastmod>2026-10-16</lastmod></url>
@@ -13,9 +13,18 @@
   <url><loc>https://meyadegamesstudio.vercel.app/blog/tomb-maze-out-now/</loc><lastmod>2026-10-19</lastmod></url>
   <url><loc>https://meyadegamesstudio.vercel.app/blog/foot-tennis-stars-2-0/</loc><lastmod>2026-10-23</lastmod></url>
   <url><loc>https://meyadegamesstudio.vercel.app/blog/foot-tennis-stars-android/</loc><lastmod>2026-10-26</lastmod></url>
+  <url><loc>https://meyadegamesstudio.vercel.app/blog/how-to-play-foot-tennis/</loc><lastmod>2026-11-13</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://meyadegamesstudio.vercel.app/blog/how-to-play-foot-tennis/"/><xhtml:link rel="alternate" hreflang="tr" href="https://meyadegamesstudio.vercel.app/tr/ayak-tenisi-nasil-oynanir/"/></url>
   <url><loc>https://meyadegamesstudio.vercel.app/about/</loc><lastmod>2026-10-16</lastmod></url>
-  <url><loc>https://meyadegamesstudio.vercel.app/for-schools/</loc><lastmod>2026-11-08</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://meyadegamesstudio.vercel.app/for-schools/"/><xhtml:link rel="alternate" hreflang="tr" href="https://meyadegamesstudio.vercel.app/tr/okullar/"/></url>
-  <url><loc>https://meyadegamesstudio.vercel.app/tr/okullar/</loc><lastmod>2026-11-08</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://meyadegamesstudio.vercel.app/for-schools/"/><xhtml:link rel="alternate" hreflang="tr" href="https://meyadegamesstudio.vercel.app/tr/okullar/"/></url>
-  <url><loc>https://meyadegamesstudio.vercel.app/foot-tennis-stars/partners/</loc><lastmod>2026-11-08</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://meyadegamesstudio.vercel.app/foot-tennis-stars/partners/"/><xhtml:link rel="alternate" hreflang="tr" href="https://meyadegamesstudio.vercel.app/tr/ayak-tenisi/"/></url>
-  <url><loc>https://meyadegamesstudio.vercel.app/tr/ayak-tenisi/</loc><lastmod>2026-11-08</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://meyadegamesstudio.vercel.app/foot-tennis-stars/partners/"/><xhtml:link rel="alternate" hreflang="tr" href="https://meyadegamesstudio.vercel.app/tr/ayak-tenisi/"/></url>
+  <url><loc>https://meyadegamesstudio.vercel.app/for-schools/</loc><lastmod>2026-11-13</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://meyadegamesstudio.vercel.app/for-schools/"/><xhtml:link rel="alternate" hreflang="tr" href="https://meyadegamesstudio.vercel.app/tr/okullar/"/></url>
+  <url><loc>https://meyadegamesstudio.vercel.app/tr/okullar/</loc><lastmod>2026-11-13</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://meyadegamesstudio.vercel.app/for-schools/"/><xhtml:link rel="alternate" hreflang="tr" href="https://meyadegamesstudio.vercel.app/tr/okullar/"/></url>
+  <url><loc>https://meyadegamesstudio.vercel.app/foot-tennis-stars/partners/</loc><lastmod>2026-11-13</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://meyadegamesstudio.vercel.app/foot-tennis-stars/partners/"/><xhtml:link rel="alternate" hreflang="tr" href="https://meyadegamesstudio.vercel.app/tr/ayak-tenisi/"/></url>
+  <url><loc>https://meyadegamesstudio.vercel.app/tr/ayak-tenisi/</loc><lastmod>2026-11-13</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://meyadegamesstudio.vercel.app/foot-tennis-stars/partners/"/><xhtml:link rel="alternate" hreflang="tr" href="https://meyadegamesstudio.vercel.app/tr/ayak-tenisi/"/></url>
+  <url><loc>https://meyadegamesstudio.vercel.app/games/</loc><lastmod>2026-11-13</lastmod></url>
+  <url><loc>https://meyadegamesstudio.vercel.app/games/foot-tennis-stars/</loc><lastmod>2026-11-13</lastmod></url>
+  <url><loc>https://meyadegamesstudio.vercel.app/games/tomb-maze/</loc><lastmod>2026-11-13</lastmod></url>
+  <url><loc>https://meyadegamesstudio.vercel.app/games/bolt-and-breath/</loc><lastmod>2026-11-13</lastmod></url>
+  <url><loc>https://meyadegamesstudio.vercel.app/games/neo/</loc><lastmod>2026-11-13</lastmod></url>
+  <url><loc>https://meyadegamesstudio.vercel.app/games/protokol-zero/</loc><lastmod>2026-11-13</lastmod></url>
+  <url><loc>https://meyadegamesstudio.vercel.app/games/prof-nano/</loc><lastmod>2026-11-13</lastmod></url>
+  <url><loc>https://meyadegamesstudio.vercel.app/tr/ayak-tenisi-nasil-oynanir/</loc><lastmod>2026-11-13</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://meyadegamesstudio.vercel.app/blog/how-to-play-foot-tennis/"/><xhtml:link rel="alternate" hreflang="tr" href="https://meyadegamesstudio.vercel.app/tr/ayak-tenisi-nasil-oynanir/"/></url>
 </urlset>

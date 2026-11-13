@@ -45,7 +45,7 @@ DEV_STORE = "https://apps.apple.com/us/developer/mehmet-ali-dengis/id1875549780"
 
 # keys: words that, found in a post slug, link that post to the game card.
 GAMES = [
-    dict(name="Foot Tennis Stars", icon="img/foot-tennis-stars.jpg", keys=["foot-tennis"],
+    dict(name="Foot Tennis Stars", page="/games/foot-tennis-stars/", icon="img/foot-tennis-stars.jpg", keys=["foot-tennis"],
          alt="Foot Tennis Stars foot tennis game icon", platforms="iOS, Android",
          extra=[("Partners", "/foot-tennis-stars/partners/")],
          text="Football meets volleyball: real foot tennis rules, smash shots over the net and online matches where iPhone and Android players meet.",
@@ -54,35 +54,35 @@ GAMES = [
          legal=[("Privacy", "https://maliandro.github.io/futnet-stars/privacy.html"),
                 ("Terms", "https://maliandro.github.io/futnet-stars/terms.html"),
                 ("Support", "https://maliandro.github.io/futnet-stars/support.html")]),
-    dict(name="Bolt & Breath: Last Dragon", icon="img/bolt-and-breath.jpg", keys=["bolt", "last-dragon"],
+    dict(name="Bolt & Breath: Last Dragon", page="/games/bolt-and-breath/", icon="img/bolt-and-breath.jpg", keys=["bolt", "last-dragon"],
          alt="Bolt & Breath: Last Dragon dragon flying game icon",
          text="You are the last dragon. Glide over a windswept coast and burn the royal fleet that came to hunt you.",
          store="https://apps.apple.com/app/apple-store/id6804506347?pt=128529947&ct=site&mt=8",
          legal=[("Privacy", "https://maliandro.github.io/boltandbreath/privacy.html"),
                 ("Terms", "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"),
                 ("Support", "https://maliandro.github.io/boltandbreath/support.html")]),
-    dict(name="NEO: Interactive Horror Story", icon="img/neo.jpg", keys=["neo"],
+    dict(name="NEO: Interactive Horror Story", page="/games/neo/", icon="img/neo.jpg", keys=["neo"],
          alt="NEO interactive horror story game icon",
          text="Your friend has been missing for three days, and the campus clock stopped at 17:34. Every choice leaves a trace.",
          store="https://apps.apple.com/app/apple-store/id6790913836?pt=128529947&ct=site&mt=8",
          legal=[("Privacy", "https://maliandro.github.io/neo/en/privacy.html"),
                 ("Terms", "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"),
                 ("Support", "https://maliandro.github.io/neo/en/support.html")]),
-    dict(name="PROTOKOL-Ø: Story Thriller", icon="img/protokol-0.jpg", keys=["protokol", "protocol"],
+    dict(name="PROTOKOL-Ø: Story Thriller", page="/games/protokol-zero/", icon="img/protokol-0.jpg", keys=["protokol", "protocol"],
          alt="Protokol-Ø dystopian story thriller game icon",
          text="A dystopian thriller told through cases: approve, reject, escalate, and find out who your decisions reach.",
          store="https://apps.apple.com/app/apple-store/id6761679315?pt=128529947&ct=site&mt=8",
          legal=[("Privacy", "https://sites.google.com/view/protokolzero/privacy-policy"),
                 ("Terms", "https://sites.google.com/view/protokolzero/terms-of-service"),
                 ("Support", "https://sites.google.com/view/protokolzero")]),
-    dict(name="Tomb Maze: Horror Escape", icon="img/tomb-maze.jpg", keys=["tomb-maze", "tomb"],
+    dict(name="Tomb Maze: Horror Escape", page="/games/tomb-maze/", icon="img/tomb-maze.jpg", keys=["tomb-maze", "tomb"],
          alt="Tomb Maze: Horror Escape horror maze game icon",
          text="Escape the mazes beneath a collapsing pyramid, with Guardians that see and hear you.",
          store="https://apps.apple.com/app/apple-store/id6819377082?pt=128529947&ct=site&mt=8", site="https://maliandro.github.io/tomb-maze-site/",
          legal=[("Privacy", "https://maliandro.github.io/tomb-maze-site/privacy.html"),
                 ("Terms", "https://maliandro.github.io/tomb-maze-site/terms.html"),
                 ("Support", "https://maliandro.github.io/tomb-maze-site/support.html")]),
-    dict(name="Prof. Nano", icon="img/prof-nano.jpg", keys=["prof-nano", "nano"],
+    dict(name="Prof. Nano", page="/games/prof-nano/", icon="img/prof-nano.jpg", keys=["prof-nano", "nano"],
          alt="Prof. Nano science game for kids icon",
          extra=[("For schools", "/for-schools/")],
          text="A game that sparks kids' curiosity about science.", note="Turkish and English · Android coming soon",
@@ -247,6 +247,9 @@ def load_posts():
             cta2_label=meta.get("cta2_label") or "", cta2_url=meta.get("cta2_url") or "",
             cta3_label=meta.get("cta3_label") or "", cta3_url=meta.get("cta3_url") or "",
             game=meta.get("game") if isinstance(meta.get("game"), str) else "",
+            # alternate_tr: Turkish twin page (hreflang); byline: studio -> signed by the studio, not a person
+            alternate_tr=meta.get("alternate_tr") if isinstance(meta.get("alternate_tr"), str) else "",
+            byline=meta.get("byline") if isinstance(meta.get("byline"), str) else "",
             minutes=max(1, math.ceil(words / 220)),
             html=enhance_images(markdown.markdown(body, extensions=["extra", "sane_lists"])),
         )
@@ -314,7 +317,7 @@ def jsonld(obj):
 ORG = {
     "@type": "Organization", "@id": SITE + "/#org", "name": BRAND, "url": SITE + "/",
     "logo": {"@type": "ImageObject", "url": SITE + LOGO, "width": 600, "height": 600},
-    "sameAs": [u for _, u in SOCIAL], "founder": {"@type": "Person", "name": AUTHOR},
+    "sameAs": [u for _, u in SOCIAL],
 }
 
 SCRIPT = """<script>
@@ -338,14 +341,15 @@ SCRIPT = """<script>
 
 
 def page(*, path, title, desc, body, active, image=None, og_type="website", ld=(), head_extra="",
-         robots="index, follow, max-image-preview:large", lang="en"):
+         robots="index, follow, max-image-preview:large", lang="en", owner=None):
     canonical = SITE + path
+    owner = owner or AUTHOR
     img = image or LOGO
     img_abs = img if img.startswith("http") else SITE + img
     tr = lang == "tr"
     nav = "".join(
         f'<a href="{href}"{CUR if key == active else ""}>{label}</a>'
-        for key, href, label in [("home", "/", "Ana sayfa" if tr else "Home"), ("games", "/#games", "Oyunlar" if tr else "Games"),
+        for key, href, label in [("home", "/", "Ana sayfa" if tr else "Home"), ("games", "/games/", "Oyunlar" if tr else "Games"),
                                  ("blog", "/blog/", "Blog"), ("about", ABOUT_HREF, "Hakkında" if tr else "About")])
     foot_extra = ('<a href="/tr/okullar/">Okullar</a><a href="/tr/ayak-tenisi/">Ayak Tenisi ortakları</a>' if tr
                   else '<a href="/for-schools/">For schools</a><a href="/foot-tennis-stars/partners/">Partners</a>')
@@ -359,7 +363,7 @@ def page(*, path, title, desc, body, active, image=None, og_type="website", ld=(
 <meta name="description" content="{e(desc)}">
 <link rel="canonical" href="{canonical}">
 <meta name="theme-color" content="#0a0e17">
-<meta name="author" content="{e(AUTHOR)}">
+<meta name="author" content="{e(owner)}">
 <meta name="robots" content="{robots}">
 {head_extra}<meta property="og:site_name" content="{BRAND}">
 <meta property="og:type" content="{og_type}">
@@ -390,8 +394,8 @@ def page(*, path, title, desc, body, active, image=None, og_type="website", ld=(
 {body}
 <footer class="site-foot">
   <div class="wrap">
-    <nav class="foot-links" aria-label="Footer"><a href="/">{"Ana sayfa" if tr else "Home"}</a><a href="/blog/">Blog</a><a href="{ABOUT_HREF}">{"Hakkında" if tr else "About"}</a>{foot_extra}<a href="/feed.xml">RSS</a>{"".join(f'<a href="{u}" target="_blank" rel="noopener">{n}</a>' for n, u in SOCIAL)}</nav>
-    <p>© {TODAY.year} {e(AUTHOR)} · {BRAND}</p>
+    <nav class="foot-links" aria-label="Footer"><a href="/">{"Ana sayfa" if tr else "Home"}</a><a href="/games/">{"Oyunlar" if tr else "Games"}</a><a href="/blog/">Blog</a><a href="{ABOUT_HREF}">{"Hakkında" if tr else "About"}</a>{foot_extra}<a href="/feed.xml">RSS</a>{"".join(f'<a href="{u}" target="_blank" rel="noopener">{n}</a>' for n, u in SOCIAL)}</nav>
+    <p>© {TODAY.year} {e(owner) + " · " if owner != BRAND else ""}{BRAND}</p>
   </div>
 </footer>
 {SCRIPT}
@@ -449,7 +453,8 @@ def item_card(item, posts, size):
         store += f'<a class="store" href="{item["play"]}" target="_blank" rel="noopener">Google Play</a>'
     if item.get("badge"):
         store += f'<span class="store soon">{e(item["badge"])}</span>'
-    story_link = f'<a class="story" href="{url_of(story)}">Read the story</a>' if story else ""
+    story_link = f'<a class="story" href="{item["page"]}">About the game</a>' if item.get("page") else ""
+    story_link += f'<a class="story" href="{url_of(story)}">Read the story</a>' if story else ""
     if item.get("extra"):
         story_link += "".join(f'<a class="story" href="{h}">{t}</a>' for t, h in item["extra"])
     note = f'<p class="note">{e(item["note"])}</p>' if item.get("note") else ""
@@ -487,12 +492,17 @@ def build_home(posts, blog_posts):
                "name": g["name"], "operatingSystem": g.get("platforms", "iOS"),
                "applicationCategory": "GameApplication" if is_game else "UtilitiesApplication",
                "image": SITE + "/" + g["icon"], "description": g["text"], "author": {"@id": SITE + "/#org"}}
-        if g.get("store") or g.get("site"):
-            obj["url"] = g.get("store") or g.get("site")
-        if g.get("play"):
-            obj["sameAs"] = [u for u in (g.get("store"), g["play"]) if u]
+        if g.get("page"):
+            obj["@id"] = SITE + g["page"] + "#game"
+            obj["url"] = SITE + g["page"]
+            obj["sameAs"] = [u for u in (g.get("store"), g.get("play")) if u]
+        else:
+            if g.get("store") or g.get("site"):
+                obj["url"] = g.get("store") or g.get("site")
+            if g.get("play"):
+                obj["sameAs"] = [u for u in (g.get("store"), g["play"]) if u]
         if is_game:
-            obj["gamePlatform"] = "iOS"
+            obj["gamePlatform"] = [x.strip() for x in g.get("platforms", "iOS").split(",")]
         items.append({"@type": "ListItem", "position": i, "item": obj})
     ld = [
         {"@context": "https://schema.org", **ORG},
@@ -626,6 +636,8 @@ def share_links(p):
 
 def build_post(p, prev_p, next_p, by_slug=None):
     is_about = p["slug"] == "about"
+    studio = p.get("byline") == "studio"
+    who = BRAND if studio else AUTHOR
     cta = ""
     butonlar = []
     for i, (lk, uk) in enumerate([("cta_label", "cta_url"), ("cta2_label", "cta2_url"), ("cta3_label", "cta3_url")]):
@@ -648,7 +660,7 @@ def build_post(p, prev_p, next_p, by_slug=None):
         related = ('<p class="related"><span>Related:</span> '
                    + " · ".join(f'<a href="{url_of(r)}">{e(r["title"])}</a>' for r in rel) + "</p>")
     meta = "" if is_about else (f'<p class="post-meta"><time datetime="{p["date"].isoformat()}">{fmt_date(p["date"])}</time>'
-                                f' · {p["minutes"]} min read · {e(AUTHOR)}</p>')
+                                f' · {p["minutes"]} min read · {e(who)}</p>')
     crumb = "" if is_about else '<p class="crumb"><a href="/blog/">Blog</a></p>'
     cover = (f'<img class="post-cover" src="{e(p["cover"])}" alt="{e(alt_for(p["cover"], p["title"]))}" width="96" height="96" decoding="async" fetchpriority="high">'
              if p["cover"] else mark_svg("c", "mark post-cover"))
@@ -659,6 +671,7 @@ def build_post(p, prev_p, next_p, by_slug=None):
       {crumb}
       <h1>{e(p["title"])}</h1>
       {meta}
+      {f'<p class="langswitch"><a href="{p["alternate_tr"]}" hreflang="tr" lang="tr">Türkçe sürüm</a></p>' if p.get("alternate_tr") else ""}
     </header>
     <div class="prose">
 {p["html"]}
@@ -686,7 +699,8 @@ def build_post(p, prev_p, next_p, by_slug=None):
                "mainEntityOfPage": SITE + url_of(p), "datePublished": p["date"].isoformat(),
                "dateModified": p["modified"].isoformat(), "inLanguage": "en",
                "keywords": ", ".join(p["keywords"]) or None, "wordCount": None,
-               "author": {"@type": "Person", "name": AUTHOR, "url": SITE + ABOUT_HREF},
+               "author": ({"@type": "Organization", "@id": SITE + "/#org", "name": BRAND} if studio
+                          else {"@type": "Person", "name": AUTHOR, "url": SITE + ABOUT_HREF}),
                "publisher": {"@type": "Organization", "name": BRAND, "url": SITE + "/",
                              "logo": {"@type": "ImageObject", "url": SITE + LOGO}}}]
         ld[0] = {k: v for k, v in ld[0].items() if v is not None}
@@ -702,10 +716,14 @@ def build_post(p, prev_p, next_p, by_slug=None):
     if not is_about:
         extra += (f'<meta property="article:published_time" content="{p["date"].isoformat()}">\n'
                   f'<meta property="article:modified_time" content="{p["modified"].isoformat()}">\n'
-                  f'<meta property="article:author" content="{e(AUTHOR)}">\n')
+                  f'<meta property="article:author" content="{e(who)}">\n')
+    if p.get("alternate_tr"):
+        extra += (f'<link rel="alternate" hreflang="en" href="{SITE}{url_of(p)}">\n'
+                  f'<link rel="alternate" hreflang="tr" href="{SITE}{p["alternate_tr"]}">\n'
+                  f'<link rel="alternate" hreflang="x-default" href="{SITE}{url_of(p)}">\n')
     write(path.strip("/") + "/index.html",
           page(path=path, title=title, desc=p["description"] or p["title"], body=body, active=active,
-               image=p["cover"], og_type=og, ld=ld, head_extra=extra))
+               image=p["cover"], og_type=og, ld=ld, head_extra=extra, owner=BRAND if studio else None))
 
 
 def build_404():
@@ -756,9 +774,14 @@ def build_feed(blog_posts):
 
 def build_sitemap(all_posts, blog_posts, extra=()):
     last = max([p["modified"] for p in blog_posts], default=TODAY)
-    urls = [("/", last), ("/blog/", last)] + [(url_of(p), p["modified"]) for p in all_posts] + [(u, TODAY) for u in extra]
+    urls = [("/", last), ("/blog/", last)] + [(url_of(p), p["modified"]) for p in all_posts] + [
+        (u, TODAY) if isinstance(u, str) else u for u in extra]
     pairs = {"/for-schools/": "/tr/okullar/", "/tr/okullar/": "/for-schools/",
              "/foot-tennis-stars/partners/": "/tr/ayak-tenisi/", "/tr/ayak-tenisi/": "/foot-tennis-stars/partners/"}
+    for p in all_posts:  # posts with a Turkish twin (front matter alternate_tr)
+        if p.get("alternate_tr"):
+            pairs[url_of(p)] = p["alternate_tr"]
+            pairs[p["alternate_tr"]] = url_of(p)
     def alt(u):
         if u not in pairs:
             return ""
@@ -768,7 +791,14 @@ def build_sitemap(all_posts, blog_posts, extra=()):
     body = "\n".join(f"  <url><loc>{SITE}{u}</loc><lastmod>{d.isoformat()}</lastmod>{alt(u)}</url>" for u, d in urls)
     write("sitemap.xml", f'<?xml version="1.0" encoding="UTF-8"?>\n'
                          f'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n{body}\n</urlset>\n')
-    write("robots.txt", f"User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n")
+    # Everything stays open to everyone. AI and search crawlers are also named one by one (GEO report action 11),
+    # each with the same "Allow: /", so a crawler that only reads its own group sees the same rule.
+    bots = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-User", "Claude-SearchBot",
+            "PerplexityBot", "Perplexity-User", "Google-Extended", "Bingbot", "Applebot", "Applebot-Extended"]
+    write("robots.txt", "User-agent: *\nAllow: /\n\n"
+                        + "".join(f"User-agent: {b}\nAllow: /\n\n" for b in bots)
+                        + f"# Plain-text summary of the games for AI assistants: {SITE}/llms.txt\n"
+                        + f"Sitemap: {SITE}/sitemap.xml\n")
     return [u for u, _ in urls]
 
 
@@ -793,6 +823,10 @@ def main():
     build_feed(blog_posts)
     import kurumsal
     extra_urls = kurumsal.build_pages(dict(page=page, write=write, e=e, SITE=SITE, BRAND=BRAND, CONTACT=CONTACT))
+    import oyunlar
+    extra_urls += oyunlar.build_pages(dict(page=page, write=write, e=e, jsonld=jsonld, SITE=SITE, BRAND=BRAND,
+                                           CONTACT=CONTACT, GAMES=GAMES, APPS=APPS, ROOT=ROOT, markdown=markdown,
+                                           parse_front_matter=parse_front_matter))
     urls = build_sitemap(blog_posts + [about], blog_posts, extra_urls)
     print(f"Built {len(blog_posts)} posts + about ({about['file']}) -> {len(urls)} URLs in sitemap")
     for p in blog_posts:
