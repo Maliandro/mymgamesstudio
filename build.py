@@ -317,7 +317,7 @@ def jsonld(obj):
 ORG = {
     "@type": "Organization", "@id": SITE + "/#org", "name": BRAND, "url": SITE + "/",
     "logo": {"@type": "ImageObject", "url": SITE + LOGO, "width": 600, "height": 600},
-    "sameAs": [u for _, u in SOCIAL],
+    "sameAs": [u for _, u in SOCIAL], "founder": {"@type": "Person", "name": AUTHOR},  # sahibi 13 Kas: ad kalabilir
 }
 
 SCRIPT = """<script>
