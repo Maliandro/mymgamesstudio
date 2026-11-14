@@ -484,6 +484,8 @@ def build_home(posts, blog_posts):
         token = gsc.read_text(encoding="utf-8").strip()
         token = re.sub(r'.*content="([^"]+)".*', r"\1", token, flags=re.S)  # accept full meta tag too
         verify = f'<meta name="google-site-verification" content="{e(token)}">\n'
+    # Bing Webmaster Tools doğrulaması (14 Kas 2026)
+    verify += '<meta name="msvalidate.01" content="43C23066E353D060195EB93B3DF61240">\n'
 
     items = []
     for i, g in enumerate(GAMES + APPS, 1):
