@@ -1,8 +1,8 @@
 ---
 title: "Foot Tennis Stars 2.0 Is Now on Android: iPhone and Android in the Same Match"
-seo_title: "Foot Tennis Stars on Android: Free Foot Tennis Game With Cross-Play"
+seo_title: "Foot Tennis Stars on Android: Free Game With Cross-Play"
 slug: foot-tennis-stars-android
-description: "Foot Tennis Stars 2.0 is out on Google Play. Android and iPhone players meet in the same online match, with nine new arenas and the Nations Cup. Here's how the launch went."
+description: "Foot Tennis Stars 2.0 is out on Google Play. Android and iPhone players meet in the same online match, with nine new arenas and the Nations Cup."
 date: 2026-10-26
 order: 12
 cover: img/foot-tennis-stars-android.jpg

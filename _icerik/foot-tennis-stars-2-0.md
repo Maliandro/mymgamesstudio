@@ -2,7 +2,7 @@
 title: "We Rebuilt Foot Tennis Stars From the Ground Up: Getting Ready for 2.0"
 seo_title: "Foot Tennis Stars 2.0: New Arenas, Nations Cup and Real Athletes"
 slug: foot-tennis-stars-2-0
-description: "This week we rebuilt Foot Tennis Stars: nine new arenas, a Nations Cup with a walk-out and a trophy lift, new athletic players and an opening scene. Here's what changed and why."
+description: "This week we rebuilt Foot Tennis Stars: nine new arenas, a Nations Cup, new athletic players and an opening scene. Here's what changed and why."
 date: 2026-10-23
 order: 11
 cover: img/foot-tennis-stars-2.jpg
