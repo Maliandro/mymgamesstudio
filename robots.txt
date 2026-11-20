@@ -37,5 +37,5 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-# Plain-text summary of the games for AI assistants: https://meyadegamesstudio.vercel.app/llms.txt
+# Plain-text summary of the games for AI assistants: https://meyadestudio.com/llms.txt
 Sitemap: https://meyadegamesstudio.vercel.app/sitemap.xml

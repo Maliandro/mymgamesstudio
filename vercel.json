@@ -1,0 +1,50 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "https://meyadestudio.com/",
+      "permanent": true
+    },
+    {
+      "source": "/(about|blog|blog/(?:bolt-and-breath|foot-tennis-stars-2-0|foot-tennis-stars-android|foot-tennis-stars|how-to-play-foot-tennis|mobies|neo|prof-nano|protokol-zero|tomb-maze-out-now|tomb-maze|unutma)|games|games/(?:foot-tennis-stars|tomb-maze|bolt-and-breath|neo|protokol-zero|prof-nano)|for-schools|tr/okullar|tr/ayak-tenisi|tr/ayak-tenisi-nasil-oynanir|foot-tennis-stars/partners)/index\\.html",
+      "destination": "https://meyadestudio.com/$1/",
+      "permanent": true
+    },
+    {
+      "source": "/(about|blog|blog/(?:bolt-and-breath|foot-tennis-stars-2-0|foot-tennis-stars-android|foot-tennis-stars|how-to-play-foot-tennis|mobies|neo|prof-nano|protokol-zero|tomb-maze-out-now|tomb-maze|unutma)|games|games/(?:foot-tennis-stars|tomb-maze|bolt-and-breath|neo|protokol-zero|prof-nano)|for-schools|tr/okullar|tr/ayak-tenisi|tr/ayak-tenisi-nasil-oynanir|foot-tennis-stars/partners)/?",
+      "destination": "https://meyadestudio.com/$1/",
+      "permanent": true
+    },
+    {
+      "source": "/feed.xml",
+      "destination": "https://meyadestudio.com/feed.xml",
+      "permanent": true
+    },
+    {
+      "source": "/llms.txt",
+      "destination": "https://meyadestudio.com/llms.txt",
+      "permanent": true
+    },
+    {
+      "source": "/favicon.png",
+      "destination": "https://meyadestudio.com/favicon.png",
+      "permanent": true
+    },
+    {
+      "source": "/apple-touch-icon.png",
+      "destination": "https://meyadestudio.com/apple-touch-icon.png",
+      "permanent": true
+    },
+    {
+      "source": "/img/(logo\\.png|logo-mark\\.png|mobies\\.jpg)",
+      "destination": "https://meyadestudio.com/img/$1",
+      "permanent": true
+    },
+    {
+      "source": "/((?!app-ads\\.txt$|robots\\.txt$|sitemap\\.xml$|82012da6289887f7a13b11c4368d3ea7\\.txt$|img/|\\.well-known/|google[0-9a-f]+\\.html$|BingSiteAuth\\.xml$).*)",
+      "destination": "https://meyadestudio.com/",
+      "permanent": true
+    }
+  ]
+}
