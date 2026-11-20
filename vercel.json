@@ -7,13 +7,393 @@
       "permanent": true
     },
     {
-      "source": "/(about|blog|blog/(?:bolt-and-breath|foot-tennis-stars-2-0|foot-tennis-stars-android|foot-tennis-stars|how-to-play-foot-tennis|mobies|neo|prof-nano|protokol-zero|tomb-maze-out-now|tomb-maze|unutma)|games|games/(?:foot-tennis-stars|tomb-maze|bolt-and-breath|neo|protokol-zero|prof-nano)|for-schools|tr/okullar|tr/ayak-tenisi|tr/ayak-tenisi-nasil-oynanir|foot-tennis-stars/partners)/index\\.html",
-      "destination": "https://meyadestudio.com/$1/",
+      "source": "/about",
+      "destination": "https://meyadestudio.com/about/",
       "permanent": true
     },
     {
-      "source": "/(about|blog|blog/(?:bolt-and-breath|foot-tennis-stars-2-0|foot-tennis-stars-android|foot-tennis-stars|how-to-play-foot-tennis|mobies|neo|prof-nano|protokol-zero|tomb-maze-out-now|tomb-maze|unutma)|games|games/(?:foot-tennis-stars|tomb-maze|bolt-and-breath|neo|protokol-zero|prof-nano)|for-schools|tr/okullar|tr/ayak-tenisi|tr/ayak-tenisi-nasil-oynanir|foot-tennis-stars/partners)/?",
-      "destination": "https://meyadestudio.com/$1/",
+      "source": "/about/",
+      "destination": "https://meyadestudio.com/about/",
+      "permanent": true
+    },
+    {
+      "source": "/about/index.html",
+      "destination": "https://meyadestudio.com/about/",
+      "permanent": true
+    },
+    {
+      "source": "/for-schools",
+      "destination": "https://meyadestudio.com/for-schools/",
+      "permanent": true
+    },
+    {
+      "source": "/for-schools/",
+      "destination": "https://meyadestudio.com/for-schools/",
+      "permanent": true
+    },
+    {
+      "source": "/for-schools/index.html",
+      "destination": "https://meyadestudio.com/for-schools/",
+      "permanent": true
+    },
+    {
+      "source": "/tr/okullar",
+      "destination": "https://meyadestudio.com/tr/okullar/",
+      "permanent": true
+    },
+    {
+      "source": "/tr/okullar/",
+      "destination": "https://meyadestudio.com/tr/okullar/",
+      "permanent": true
+    },
+    {
+      "source": "/tr/okullar/index.html",
+      "destination": "https://meyadestudio.com/tr/okullar/",
+      "permanent": true
+    },
+    {
+      "source": "/tr/ayak-tenisi",
+      "destination": "https://meyadestudio.com/tr/ayak-tenisi/",
+      "permanent": true
+    },
+    {
+      "source": "/tr/ayak-tenisi/",
+      "destination": "https://meyadestudio.com/tr/ayak-tenisi/",
+      "permanent": true
+    },
+    {
+      "source": "/tr/ayak-tenisi/index.html",
+      "destination": "https://meyadestudio.com/tr/ayak-tenisi/",
+      "permanent": true
+    },
+    {
+      "source": "/tr/ayak-tenisi-nasil-oynanir",
+      "destination": "https://meyadestudio.com/tr/ayak-tenisi-nasil-oynanir/",
+      "permanent": true
+    },
+    {
+      "source": "/tr/ayak-tenisi-nasil-oynanir/",
+      "destination": "https://meyadestudio.com/tr/ayak-tenisi-nasil-oynanir/",
+      "permanent": true
+    },
+    {
+      "source": "/tr/ayak-tenisi-nasil-oynanir/index.html",
+      "destination": "https://meyadestudio.com/tr/ayak-tenisi-nasil-oynanir/",
+      "permanent": true
+    },
+    {
+      "source": "/foot-tennis-stars/partners",
+      "destination": "https://meyadestudio.com/foot-tennis-stars/partners/",
+      "permanent": true
+    },
+    {
+      "source": "/foot-tennis-stars/partners/",
+      "destination": "https://meyadestudio.com/foot-tennis-stars/partners/",
+      "permanent": true
+    },
+    {
+      "source": "/foot-tennis-stars/partners/index.html",
+      "destination": "https://meyadestudio.com/foot-tennis-stars/partners/",
+      "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "https://meyadestudio.com/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/",
+      "destination": "https://meyadestudio.com/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/index.html",
+      "destination": "https://meyadestudio.com/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/games",
+      "destination": "https://meyadestudio.com/games/",
+      "permanent": true
+    },
+    {
+      "source": "/games/",
+      "destination": "https://meyadestudio.com/games/",
+      "permanent": true
+    },
+    {
+      "source": "/games/index.html",
+      "destination": "https://meyadestudio.com/games/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/bolt-and-breath",
+      "destination": "https://meyadestudio.com/blog/bolt-and-breath/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/bolt-and-breath/",
+      "destination": "https://meyadestudio.com/blog/bolt-and-breath/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/bolt-and-breath/index.html",
+      "destination": "https://meyadestudio.com/blog/bolt-and-breath/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/foot-tennis-stars-2-0",
+      "destination": "https://meyadestudio.com/blog/foot-tennis-stars-2-0/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/foot-tennis-stars-2-0/",
+      "destination": "https://meyadestudio.com/blog/foot-tennis-stars-2-0/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/foot-tennis-stars-2-0/index.html",
+      "destination": "https://meyadestudio.com/blog/foot-tennis-stars-2-0/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/foot-tennis-stars-android",
+      "destination": "https://meyadestudio.com/blog/foot-tennis-stars-android/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/foot-tennis-stars-android/",
+      "destination": "https://meyadestudio.com/blog/foot-tennis-stars-android/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/foot-tennis-stars-android/index.html",
+      "destination": "https://meyadestudio.com/blog/foot-tennis-stars-android/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/foot-tennis-stars",
+      "destination": "https://meyadestudio.com/blog/foot-tennis-stars/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/foot-tennis-stars/",
+      "destination": "https://meyadestudio.com/blog/foot-tennis-stars/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/foot-tennis-stars/index.html",
+      "destination": "https://meyadestudio.com/blog/foot-tennis-stars/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-play-foot-tennis",
+      "destination": "https://meyadestudio.com/blog/how-to-play-foot-tennis/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-play-foot-tennis/",
+      "destination": "https://meyadestudio.com/blog/how-to-play-foot-tennis/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-play-foot-tennis/index.html",
+      "destination": "https://meyadestudio.com/blog/how-to-play-foot-tennis/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/mobies",
+      "destination": "https://meyadestudio.com/blog/mobies/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/mobies/",
+      "destination": "https://meyadestudio.com/blog/mobies/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/mobies/index.html",
+      "destination": "https://meyadestudio.com/blog/mobies/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/neo",
+      "destination": "https://meyadestudio.com/blog/neo/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/neo/",
+      "destination": "https://meyadestudio.com/blog/neo/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/neo/index.html",
+      "destination": "https://meyadestudio.com/blog/neo/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/prof-nano",
+      "destination": "https://meyadestudio.com/blog/prof-nano/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/prof-nano/",
+      "destination": "https://meyadestudio.com/blog/prof-nano/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/prof-nano/index.html",
+      "destination": "https://meyadestudio.com/blog/prof-nano/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/protokol-zero",
+      "destination": "https://meyadestudio.com/blog/protokol-zero/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/protokol-zero/",
+      "destination": "https://meyadestudio.com/blog/protokol-zero/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/protokol-zero/index.html",
+      "destination": "https://meyadestudio.com/blog/protokol-zero/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tomb-maze-out-now",
+      "destination": "https://meyadestudio.com/blog/tomb-maze-out-now/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tomb-maze-out-now/",
+      "destination": "https://meyadestudio.com/blog/tomb-maze-out-now/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tomb-maze-out-now/index.html",
+      "destination": "https://meyadestudio.com/blog/tomb-maze-out-now/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tomb-maze",
+      "destination": "https://meyadestudio.com/blog/tomb-maze/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tomb-maze/",
+      "destination": "https://meyadestudio.com/blog/tomb-maze/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tomb-maze/index.html",
+      "destination": "https://meyadestudio.com/blog/tomb-maze/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unutma",
+      "destination": "https://meyadestudio.com/blog/unutma/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unutma/",
+      "destination": "https://meyadestudio.com/blog/unutma/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unutma/index.html",
+      "destination": "https://meyadestudio.com/blog/unutma/",
+      "permanent": true
+    },
+    {
+      "source": "/games/foot-tennis-stars",
+      "destination": "https://meyadestudio.com/games/foot-tennis-stars/",
+      "permanent": true
+    },
+    {
+      "source": "/games/foot-tennis-stars/",
+      "destination": "https://meyadestudio.com/games/foot-tennis-stars/",
+      "permanent": true
+    },
+    {
+      "source": "/games/foot-tennis-stars/index.html",
+      "destination": "https://meyadestudio.com/games/foot-tennis-stars/",
+      "permanent": true
+    },
+    {
+      "source": "/games/tomb-maze",
+      "destination": "https://meyadestudio.com/games/tomb-maze/",
+      "permanent": true
+    },
+    {
+      "source": "/games/tomb-maze/",
+      "destination": "https://meyadestudio.com/games/tomb-maze/",
+      "permanent": true
+    },
+    {
+      "source": "/games/tomb-maze/index.html",
+      "destination": "https://meyadestudio.com/games/tomb-maze/",
+      "permanent": true
+    },
+    {
+      "source": "/games/bolt-and-breath",
+      "destination": "https://meyadestudio.com/games/bolt-and-breath/",
+      "permanent": true
+    },
+    {
+      "source": "/games/bolt-and-breath/",
+      "destination": "https://meyadestudio.com/games/bolt-and-breath/",
+      "permanent": true
+    },
+    {
+      "source": "/games/bolt-and-breath/index.html",
+      "destination": "https://meyadestudio.com/games/bolt-and-breath/",
+      "permanent": true
+    },
+    {
+      "source": "/games/neo",
+      "destination": "https://meyadestudio.com/games/neo/",
+      "permanent": true
+    },
+    {
+      "source": "/games/neo/",
+      "destination": "https://meyadestudio.com/games/neo/",
+      "permanent": true
+    },
+    {
+      "source": "/games/neo/index.html",
+      "destination": "https://meyadestudio.com/games/neo/",
+      "permanent": true
+    },
+    {
+      "source": "/games/protokol-zero",
+      "destination": "https://meyadestudio.com/games/protokol-zero/",
+      "permanent": true
+    },
+    {
+      "source": "/games/protokol-zero/",
+      "destination": "https://meyadestudio.com/games/protokol-zero/",
+      "permanent": true
+    },
+    {
+      "source": "/games/protokol-zero/index.html",
+      "destination": "https://meyadestudio.com/games/protokol-zero/",
+      "permanent": true
+    },
+    {
+      "source": "/games/prof-nano",
+      "destination": "https://meyadestudio.com/games/prof-nano/",
+      "permanent": true
+    },
+    {
+      "source": "/games/prof-nano/",
+      "destination": "https://meyadestudio.com/games/prof-nano/",
+      "permanent": true
+    },
+    {
+      "source": "/games/prof-nano/index.html",
+      "destination": "https://meyadestudio.com/games/prof-nano/",
       "permanent": true
     },
     {
@@ -37,12 +417,22 @@
       "permanent": true
     },
     {
-      "source": "/img/(logo\\.png|logo-mark\\.png|mobies\\.jpg)",
-      "destination": "https://meyadestudio.com/img/$1",
+      "source": "/img/logo.png",
+      "destination": "https://meyadestudio.com/img/logo.png",
       "permanent": true
     },
     {
-      "source": "/((?!app-ads\\.txt$|robots\\.txt$|sitemap\\.xml$|82012da6289887f7a13b11c4368d3ea7\\.txt$|img/|\\.well-known/|google[0-9a-f]+\\.html$|BingSiteAuth\\.xml$).*)",
+      "source": "/img/logo-mark.png",
+      "destination": "https://meyadestudio.com/img/logo-mark.png",
+      "permanent": true
+    },
+    {
+      "source": "/img/mobies.jpg",
+      "destination": "https://meyadestudio.com/img/mobies.jpg",
+      "permanent": true
+    },
+    {
+      "source": "/((?!app-ads\\.txt|robots\\.txt|sitemap\\.xml|82012da6289887f7a13b11c4368d3ea7\\.txt|img/|\\.well-known/|google[0-9a-f]+\\.html|BingSiteAuth\\.xml).*)",
       "destination": "https://meyadestudio.com/",
       "permanent": true
     }
